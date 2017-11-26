@@ -1,9 +1,9 @@
 <?php
 
-$db['db_host'] = "server here";
-$db['db_user'] = "database user here";
-$db['db_pass'] = "database pw here";
-$db['db_name'] = "database name here";
+$db['db_host'] = "localhost";
+$db['db_user'] = "kylejost_ferris";
+$db['db_pass'] = "D!etC0ke";
+$db['db_name'] = "kylejost_ferris";
 
 #Changing values into constants.  Supposed to be more secure.
 foreach($db as $key => $value){
