@@ -1,7 +1,10 @@
+
 <?php
 session_start();
 $timeout = 180; // Set timeout in minutes
 $logout_redirect_url = "index.php"; // Set logout URL
+$autoLogout = "The session has been going for too long. You have been automatically logged out.";
+
 
 $timeout = $timeout * 60; // Converts seconds to minutes
 if (isset($_SESSION['start_time'])) {
@@ -9,6 +12,7 @@ if (isset($_SESSION['start_time'])) {
     if ($elapsed_time >= $timeout) {
         session_destroy();
         header("Location: login.php");
+        echo "<script type='text/javascript'>alert('$autoLogout');</script>"; // will have a popup that appears when auto logged off
     }
 }
 $_SESSION['start_time'] = time();

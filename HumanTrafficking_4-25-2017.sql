@@ -957,3 +957,29 @@ INSERT INTO `users` (`userID`, `roleID`, `firstName`, `lastName`, `email`, `user
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- --------------------------------------------------------
+
+--
+-- Update Statements
+--
+
+-- Eli Bergsma 1/20/17 navigations and categories to facilitate new header look
+
+-- Put events link in position 3
+
+UPDATE navigations
+SET navigationOrder = 3, navigationLocation = 2
+WHERE navigationID = 28;
+
+-- Create a new link for upcoming media pages
+
+INSERT INTO `navigations` (`navigationID`, `navigationName`, `navigationURL`, `navigationLocation`, `navigationVisible`, `navigationOrder`, `navButtonColor`, `navButtonSize`, `navJavaScript`) VALUES
+(26, 'Media', '#', 2, 1, 5, '', '', '');
+
+-- Move demographic links to Home dropdown
+
+UPDATE categories
+SET navigationID = 1
+WHERE categoryID IN (2,3,4,5,251);
+
