@@ -11,29 +11,45 @@
 <!--        </div>-->
 <!--   </div>-->
     <!-- /.row -->
-    <?php
-    if(isset($_GET['view'])) {
+   <?php
+
+	 	
+	    if(isset($_GET['view'])) {
         $view = $_GET['view'];
-    } else {
-        $view = '';
+        } else {
+       // $view = '';
+        print($view);
+
     }
-    switch($view) {
+
+   /* switch($view) {
         case 'catbynavid'; //index.php?view=catbynavid&navigationID=#
-            listFECatByNavID();
-            break;
+           listFECatByNavID();
+            print($view);
+			break;
 
         case 'catbynavname'; //index.php?view=catbynavname&navname=Something
-            listFECatByNavName();
+            //when user clicks into the events page
+            listFECatByNavName(); //comment out will take away the white icones when the user clicks on the events -BV
+            print($view);
             break;
 
         case 'indexcategories'; //index.php?view=indexcategories
-            findIndexCategories();
+           // findIndexCategories(); //comment out will will remove the links above events and make this odd. Don't do this  - BV
+            print($view);
             break;
 
         default:  //Shows categories with Navigation marked with Location 3(body)
-            findIndexCategories();
+           findIndexCategories();
             break;
-    }
-
+    }*/
     ?>
+
+<h1><a href="index.php">Calendar of Events</a></h1>
+
+<div class ="col-xs-12 col-sm-3">
+    <img class="img-responsive img-thumbnail img-rounded artListImage" src="uploads/images/CalendarImage.png" alt="calendar  - just image for now ">
+</div>
+
+
 
