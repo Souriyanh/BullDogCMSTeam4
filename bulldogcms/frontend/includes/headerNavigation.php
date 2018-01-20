@@ -40,7 +40,7 @@
             if(isset($headerTitle) && $headerTitle != ''){
                 echo "<h1 class='headerTitle'>&nbsp;$headerTitle</h1>";
             }
-            echo "</a>"
+            echo "</a>";
             ?>
 
 
@@ -54,6 +54,10 @@
             </ul>
         </div>
         <!-- /.navbar-collapse -->
+        <?php
+            //Search included in header bar
+            include "search.php";
+        ?>
     </div>
     <!-- /.container -->
 
@@ -63,6 +67,7 @@
             echo "<div class='w3-col s6 w3-container' style='width:50%'>$headerHTML</div>";
             echo "<div class='w3-col s6 w3-container' style='width:50%'>$headerTextArea1</div>";
         }
+
         */?>
         <?php
             if(isset($headerHTML) && $headerHTML != ''){

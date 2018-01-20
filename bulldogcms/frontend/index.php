@@ -33,8 +33,6 @@
         switch($view) {
             case 'articlelist'; //index.php?view=articlelist
                 echo "<!-- Page Content --><div class='container'><div class='row'>";
-                //Search above body.
-                include "includes/search.php";
                 ?>
                 <div class="col-md-<?php echo $GLOBAL['colNumberForAsideOption']?>">
                 <?php
@@ -43,8 +41,6 @@
 
             case 'article'; //index.php?view=article&articleID=1
                 echo "<!-- Page Content --><div class='container'><div class='row'>";
-                //Search above body.
-                include "includes/search.php";
                 ?>
                 <div class="col-md-<?php echo $GLOBAL['colNumberForAsideOption']?>">
                 <?php
@@ -53,8 +49,6 @@
 
             case 'specialpage'; //index.php?view=specialpage&articleID=1
                 echo "<!-- Page Content --><div class='container'><div class='row'>";
-                //Search above body.
-                include "includes/search.php";
                 ?>
                 <div class="col-md-<?php echo $GLOBAL['colNumberForAsideOption']?>">
                 <?php
@@ -64,8 +58,6 @@
             //Only showing categories marked for showing up on Index. in navigations.navigationsLocation = 3
             case 'indexcategories'; //index.php?view=indexcategories
                 echo "<!-- Page Content --><div class='container'><div class='row'>";
-                //Search above body.
-                include "includes/search.php";
                 ?>
                 <div class="col-md-<?php echo $GLOBAL['colNumberForAsideOption']?>">
                 <?php
@@ -75,8 +67,6 @@
             //Show indexcategories and categories per navigationID
             case 'catbynavid'; //index.php?view=catbynavid&navigationID=#
                 echo "<!-- Page Content --><div class='container'><div class='row'>";
-                //Search above body.
-                include "includes/search.php";
                 ?>
                 <div class="col-md-<?php echo $GLOBAL['colNumberForAsideOption']?>">
                 <?php
@@ -85,8 +75,6 @@
 
             case 'catbynavname'; //index.php?view=catbynavname&navname=Something
                 echo "<!-- Page Content --><div class='container'><div class='row'>";
-                //Search above body.
-                include "includes/search.php";
                 ?>
                 <div class="col-md-<?php echo $GLOBAL['colNumberForAsideOption']?>">
                 <?php
@@ -101,9 +89,6 @@
                 }
 
                 echo "<!-- Page Content --><div class='container'><div class='row'>";
-
-                //Search below Hero image but above body.
-                include "includes/search.php";
 
                 //Find out if site is to display body text as well
                 ?>
