@@ -3,8 +3,8 @@
 <div class="col-md-4 col-xs-12 search">
 
     <!-- Blog Search Well -->
-    <div class="well">
-        <h4>Search</h4>
+    <div class="searchBar">
+        <!--<h4>Search</h4>-->
         <!--<form action="includes/articlelistSearch.php" method="post">-->
         <form action="index.php?view=articlelist&display=searcharticles" method="post">
             <div class="input-group">

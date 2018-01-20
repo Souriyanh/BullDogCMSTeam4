@@ -225,6 +225,7 @@ margin-top: 0px;
 .search {
 margin-top: 10px;
 float: right;
+width: 20%;
 }
 
 .thumbnail {
