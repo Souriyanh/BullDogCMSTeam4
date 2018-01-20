@@ -54,7 +54,7 @@ function quickExit2(){
     Window.open();
 }
 
-
+//test
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
