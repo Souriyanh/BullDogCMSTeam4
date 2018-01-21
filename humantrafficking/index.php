@@ -9,6 +9,7 @@
 <!-- Page Content Index from CMS folder -->
 <?php include "../bulldogcms/frontend/index.php"; ?>
 
+<!--Here is the quick exit button-->
 <div class="thumbnail" id="quickExit">
     <button type="button" class="btn btn-danger" onclick="quickExit()" data-toggle="tooltip" data-html="true"
             title="<p>The Quick Exit Button allows you to quickly exit this site<br>and prevent navigation back to it. It works by flooding your browser history and sending you to www.google.com</p>">
