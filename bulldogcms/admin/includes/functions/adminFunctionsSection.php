@@ -39,6 +39,7 @@ function updatesection($asideSectionID){
 
 
         $query = "UPDATE asideSection SET asideHeader = '$asideHeader', asideText = '$asideText' WHERE asideSectionID= '$asideSectionID'";
+        $query = mysqli_real_escape_string($connection, $query);
         mysqli_query($connection, $query);
 
         ?>

@@ -53,6 +53,7 @@ function updateFooterSetting($footerLogoImg) {
             footerHeight = '{$footerHeight}',
             footerTextArea1 = '{$footerTextArea1}'
             WHERE footerID = '1'";
+        $query = mysqli_real_escape_string($connection, $query);
 
         $updateQuery = mysqli_query($connection, $query);
         confirmQuery($updateQuery);

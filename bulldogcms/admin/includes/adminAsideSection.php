@@ -17,7 +17,7 @@
 
             $query = "UPDATE asideSection SET asideHeader = '{$asideHeader}', asideText = '{$asideText}' ";
             $query .= "WHERE asideSectionID = '1'";
-
+            $query = mysqli_real_escape_string($connection, $query);
             $insertCategory = mysqli_query($connection, $query);
 
             #If not successful kill script

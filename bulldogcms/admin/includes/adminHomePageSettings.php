@@ -187,6 +187,7 @@
                     $query = "UPDATE bodySettings SET bodyHeroic = '{$bodyHeroic}', heroicImage = '{$heroicImage}', bodyView = '{$bodyView}', ";
                     $query .= "heroicHeader = '{$heroicHeader}', heroicText1 = '{$heroicText1}', bodyText = '{$bodyText}', bodyContent = '{$bodyContent}', ";
                     $query .= "fpPagLength = '{$fpPagLength}', fpEnableCategories = '{$fpEnableCategories}', fpEnableArticles = '{$fpEnableArticles}', fpOrder = '{$fpOrder}' WHERE bodySettingID = '1'";
+                    $query = mysqli_real_escape_string($connection, $query);
                     $updateQuery = mysqli_query($connection, $query);
 
                     confirmQuery($updateQuery);

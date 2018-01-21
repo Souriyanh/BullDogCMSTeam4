@@ -103,6 +103,7 @@ function updateCategory($catID, $originalCategoryOrder, $categoryImage, $navID) 
                         if ($thisCatOrder == $tempCatOrder) {
                             $tempCatOrder += 1;
                             $query = "UPDATE categories SET categoryOrder = $tempCatOrder WHERE categoryID = $thisCatID";
+                            $query = mysqli_real_escape_string($connection, $query);
                             $orderUpdate_query = mysqli_query($connection, $query);
                             confirmQuery($orderUpdate_query);
                         }
@@ -120,6 +121,7 @@ function updateCategory($catID, $originalCategoryOrder, $categoryImage, $navID) 
                         if ($thisCatOrder == $tempCatOrder) {
                             $tempCatOrder -= 1;
                             $query = "UPDATE categories SET categoryOrder = $tempCatOrder WHERE categoryID= $thisCatID";
+                            $query = mysqli_real_escape_string($connection, $query);
                             $update_query = mysqli_query($connection, $query);
                             confirmQuery($update_query);
                         }
@@ -135,6 +137,7 @@ function updateCategory($catID, $originalCategoryOrder, $categoryImage, $navID) 
 						categoryImage='{$categoryImage}',
 						categoryTypeID='{$categoryTypeID}'
 					WHERE categoryID = {$catID}";
+                $query = mysqli_real_escape_string($connection, $query);
                 $update_query = mysqli_query($connection, $query);
 
                 confirmQuery($update_query);
@@ -160,6 +163,7 @@ function updateCategory($catID, $originalCategoryOrder, $categoryImage, $navID) 
                     $thisCatID = $row['categoryID'];
 
                     $query = "UPDATE categories SET categoryOrder={$tempCatOrder} WHERE categoryID={$thisCatID}";
+                    $query = mysqli_real_escape_string($connection, $query);
                     $update_query = mysqli_query($connection, $query);
 
                     confirmQuery($update_query);
@@ -184,6 +188,7 @@ function updateCategory($catID, $originalCategoryOrder, $categoryImage, $navID) 
 						categoryImage='{$categoryImage}',
 						categoryTypeID='{$categoryTypeID}'
 					WHERE categoryID = {$catID}";
+            $query = mysqli_real_escape_string($connection, $query);
             $update_query = mysqli_query($connection, $query);
 
             confirmQuery($update_query);
@@ -307,6 +312,7 @@ function listCategories(){
                 echo '<div class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign"></span> You cannot delete a Category that has Articles assigned to it.</div>';
             } else {
                 $query = "DELETE FROM categories WHERE categoryID = {$catID} ";
+                $query = mysqli_real_escape_string($connection, $query);
                 $delete_query = mysqli_query($connection, $query);
 
                 confirmQuery($delete_query);
@@ -320,6 +326,7 @@ function listCategories(){
                         $thisCatID = $row['categoryID'];
 
                         $query = "UPDATE categories SET categoryOrder={$tempCatOrder} WHERE categoryID={$thisCatID}";
+                        $query = mysqli_real_escape_string($connection, $query);
                         $update_query = mysqli_query($connection, $query);
 
                         confirmQuery($update_query);
@@ -355,6 +362,7 @@ function listCategories(){
             $categoryID = $_GET['setvisibleno'];
 
             $query = "UPDATE categories SET categoryVisible = '0' WHERE categoryID = $categoryID";
+            $query = mysqli_real_escape_string($connection, $query);
             $changeVisible = mysqli_query($connection, $query);
 
             //Insert into changeLog table
@@ -379,6 +387,7 @@ function listCategories(){
             $categoryID = $_GET['setvisibleyes'];
 
             $query = "UPDATE categories SET categoryVisible = '1' WHERE categoryID = $categoryID";
+            $query = mysqli_real_escape_string($connection, $query);
             $changeVisible = mysqli_query($connection, $query);
 
             //Insert into changeLog table

@@ -54,6 +54,7 @@ if(isset($_GET['edit'])) {
 
     //Lock article, as it is currently being edited.
     $lockArticles = "UPDATE articles SET articleLock = '1' WHERE articleID = {$originalArticleID}";
+    $lockArticles = mysqli_real_escape_string($connection, $lockArticles);
     $articlesLockQuery = mysqli_query($connection, $lockArticles);
     confirmQuery($articlesLockQuery);
 
@@ -148,7 +149,7 @@ if(isset($_GET['edit'])) {
                          articleVisible = '{$articleVisible}',
                          articleLock = '{$articleLock}'
                          WHERE articleTransactionID = {$originalTransactionID}";
-
+            $articles = mysqli_real_escape_string($connection, $articles);
             $articlesQuery = mysqli_multi_query($connection, $articles);
             //Transaction validate point.
             if (!$articlesQuery) {
@@ -168,7 +169,7 @@ if(isset($_GET['edit'])) {
                                     articlePending = '{$articlePending}',
                                     transactionDate = now()
                                     WHERE transactionID = {$originalTransactionID}";
-
+            $articleTransactions = mysqli_real_escape_string($connection, $articleTransactions);
             $articleTransactionQuery = mysqli_multi_query($connection, $articleTransactions);
             //Transaction validate point.
             if (!$articleTransactionQuery) {
@@ -220,6 +221,7 @@ if(isset($_GET['edit'])) {
 
         //Unlock article.
         $unlockArticles = "UPDATE articles SET articleLock = 0 WHERE articleID = {$originalArticleID}";
+        $unlockArticles = mysqli_real_escape_string($connection, $unlockArticles);
         $articlesUnlockQuery = mysqli_query($connection, $unlockArticles);
         confirmQuery($articlesUnlockQuery);
 
@@ -236,6 +238,7 @@ if(isset($_GET['edit'])) {
     else if (isset($_POST['cancel'])) {
         //Unlock article.
         $unlockArticles = "UPDATE articles SET articleLock = 0 WHERE articleID = {$originalArticleID}";
+        $unlockArticles = mysqli_real_escape_string($connection, $unlockArticles);
         $articlesUnlockQuery = mysqli_query($connection, $unlockArticles);
         confirmQuery($articlesUnlockQuery);
 

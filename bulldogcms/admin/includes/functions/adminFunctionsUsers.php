@@ -221,9 +221,11 @@ function updateUser() {
     //If the user doesn't enter an updated password, then just use the previously saved one. Otherwise update it.
     if ($password == "" || empty($password)) {
         $query = "UPDATE users SET firstName = '$firstName', lastName = '$lastName', roleID = '$roleID', username = '$username', email = '$email', active = '$active', emailNotification = '$emailNotification' WHERE userID = '$userID'";
+        $query = mysqli_real_escape_string($connection, $query);
     } else {
         $password = password_hash($password, PASSWORD_BCRYPT, array('cost' => 10));
         $query = "UPDATE users SET firstName = '$firstName', lastName = '$lastName', roleID = '$roleID', username = '$username', email = '$email', password = '$password', active = '$active', emailNotification = '$emailNotification' WHERE userID = '$userID'";
+        $query = mysqli_real_escape_string($connection, $query);
     }
 
     //Check if the entered username already exists in db.
@@ -282,6 +284,7 @@ function updateProfile() {
         $emailNotification = 0;
 
     $query = "UPDATE users SET firstName = '$firstName', lastName = '$lastName', username = '$username', email = '$email', emailNotification = '$emailNotification' WHERE userID = '$userID'";
+    $query = mysqli_real_escape_string($connection, $query);
 
     //Check if the entered username already exists in db.
     $userNameCheck = "SELECT * FROM users WHERE (username = '{$username}') AND (userID != '{$userID}')";
@@ -335,6 +338,7 @@ function changeUserActive() {
 
         $userID = $_GET['setactive'];
         $query = "UPDATE users SET active = '1' WHERE userID = $userID";
+        $query = mysqli_real_escape_string($connection, $query);
         mysqli_query($connection, $query);
 
         mysqli_close($connection);
@@ -350,6 +354,7 @@ function changeUserActive() {
 
         $userID = $_GET['setinactive'];
         $query = "UPDATE users SET active = '0' WHERE userID = $userID";
+        $query = mysqli_real_escape_string($connection, $query);
         mysqli_query($connection, $query);
 
         mysqli_close($connection);
@@ -378,6 +383,7 @@ function updatePassword($newPassword, $confirmPassword, $userID) {
         if ($newPassword == $confirmPassword) {
             $newPassword = password_hash($newPassword, PASSWORD_BCRYPT, array('cost' => 10));
             $updateQuery = "UPDATE users SET password = '$newPassword' WHERE userID = '$userID'";
+            $updateQuery = mysqli_real_escape_string($connection, $updateQuery);
             mysqli_query($connection, $updateQuery);
 
             //update changelog, & redirect user back to the editProfile page. Insert into Changelog table, then safely close the db connection.
