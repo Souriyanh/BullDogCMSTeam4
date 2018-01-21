@@ -182,6 +182,7 @@
                     $query .= "headerTitleFont = '{$headerTitleFont}', headerFont = '{$headerFont}', footerTitleFont = '{$footerTitleFont}', footerFont = '{$footerFont}', asideFont = '{$asideFont}', ";
                     $query .= "heroicFont = '{$heroicFont}',pageHeading = '{$pageHeading}', dividingLines = '{$dividingLines}' ";
                     $query .= "WHERE themeColorID = '1'";
+                    $query = mysqli_real_escape_string($connection, $query);
                     $updateQuery = mysqli_query($connection, $query);
 
                     confirmQuery($updateQuery);
