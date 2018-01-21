@@ -10,10 +10,10 @@
 <?php include "../bulldogcms/frontend/index.php"; ?>
 
 <div class="thumbnail" id="quickExit">
-    <p class="text-center"><span class="glyphicon glyphicon-info-sign"></span>Need Help?<br>
-        <button type="button" class="btn btn-danger" onclick="quickExit()" data-toggle="tooltip" data-html="true"
-                title="<p>The Quick Exit Button allows you to quickly exit this site<br>and prevent navigation back to it. It works by flooding your browser history and sending you to www.google.com</p>">
-            <span class="glyphicon glyphicon-alert"></span> Quick Exit</button>
+    <button type="button" class="btn btn-danger" onclick="quickExit()" data-toggle="tooltip" data-html="true"
+            title="<p>The Quick Exit Button allows you to quickly exit this site<br>and prevent navigation back to it. It works by flooding your browser history and sending you to www.google.com</p>">
+        <span class="glyphicon glyphicon-exclamation-sign"></span>Click To Exit</button>
+    <p class="text-center"><small>Get Help Below</small><br>
     <p><span class="glyphicon glyphicon-earphone"></span></p><a href="tel:+18883737888">1-800-373-7888</a><br>
     Or text "help" or "info" to <a href="sms:233733">233733</a></p>
 </div>
