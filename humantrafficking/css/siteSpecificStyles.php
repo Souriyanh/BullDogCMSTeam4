@@ -65,11 +65,11 @@ left: 0px;
 width: 100%;
 height: auto;
 padding:0px;
-background-color: #C77B7B;
+background-color: #1a63a3;
 color: black;
 font-weight: bold;
 z-index: 3;
-border: 1px solid #d43f3a;
+border: 1px solid #000000;
 margin: 0;
 border-radius: 0;
 }
