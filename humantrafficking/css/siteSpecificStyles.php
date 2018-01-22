@@ -25,6 +25,8 @@ include "../../bulldogcms/frontend/css/styles.php";
 
 /*Quick Exit Styles*/
 
+/*This is the style for the thumbnail portion*/
+
 #quickExit {
 position: fixed;
 bottom: 0px;
@@ -41,6 +43,9 @@ margin-right: -16px;
 margin-bottom: 50px;
 border-radius: 8px;
 }
+
+/*This is the styling for the button within the thumbnail*/
+
 #quickExit>button {
 display: block;
 width: 100%;
@@ -48,6 +53,9 @@ margin: 0;
 font-weight: bolder;
 font-size: 1.5em;
 }
+
+/*This is the styling for p small items*/
+
 #quickExit>p>small {
 font-size: .6em;
 line-height: 2px;
