@@ -29,6 +29,13 @@
         .events .col-sm-6 {width: 98%;}
         .container.events .row .col-sm-12 .col-sm-6.short, .short {auto;}
     }
+	
+	@media (max-width: 768px) { #navlist li {display: inline-block; width: 100%;}  
+	}
+
+	@media (max-width: 768px) {
+	.container.events .row .col-sm-12 .col-sm-6.short, .short {height: auto;}
+	}
 </style>
 <!--On Click go to index.php -->
 <h1><a href="index.php">Events</a></h1>
