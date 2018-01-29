@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ad14467d-858e-4651-9bf2-043ade4b6c2a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/humantrafficking/index.php" afterPath="$PROJECT_DIR$/humantrafficking/index.php" />
+      <change beforePath="$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php" afterPath="$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/humantrafficking/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="siteSpecificStyles.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1365">
+              <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -34,6 +44,7 @@
       <list>
         <option value="$PROJECT_DIR$/bulldogcms/frontend/includes/categoryList.php" />
         <option value="$PROJECT_DIR$/humantrafficking/index.php" />
+        <option value="$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php" />
       </list>
     </option>
   </component>
@@ -77,6 +88,12 @@
               <item name="BullDogCMSTeam4" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="humantrafficking" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BullDogCMSTeam4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="humantrafficking" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -113,12 +130,20 @@
       <option name="presentableId" value="Default" />
       <updated>1516760897785</updated>
       <workItem from="1516760900829" duration="324000" />
-      <workItem from="1517187344087" duration="86000" />
+      <workItem from="1517187344087" duration="727000" />
     </task>
+    <task id="LOCAL-00001" summary="This is a change to the quick exit GUI">
+      <created>1517187453347</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1517187453347</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="410000" />
+    <option name="totallyTimeSpent" value="1051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
@@ -151,6 +176,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="This is a change to the quick exit GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is a change to the quick exit GUI" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -177,6 +206,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
           <folding />
         </state>
       </provider>
