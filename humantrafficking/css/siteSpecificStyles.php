@@ -32,7 +32,7 @@ include "../../bulldogcms/frontend/css/styles.php";
 position: fixed;
 bottom: 0px;
 right: 0px;
-height: 144px;
+height: 167px;
 width: 245px;
 background-color: #d31528;
 color: black;
