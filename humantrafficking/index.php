@@ -13,12 +13,14 @@
 <div class="thumbnail" id="quickExit">
     <button type="button" class="btn btn-danger" onclick="quickExit()" data-toggle="tooltip" data-html="true"
             title="<p>The Quick Exit Button allows you to quickly exit this site<br>and prevent navigation back to it. It works by flooding your browser history and sending you to www.google.com</p>">
-        <span class="glyphicon glyphicon-exclamation-sign"></span> Click To Exit</button>
+        <span class="glyphicon glyphicon-exclamation-sign"></span> Click To Exit</button><br>
 
     <p class="text-center">Click Below For Help<br></p>
 
     <button type="button" class="btn btn-info" data-toggle="popover" title="National Human Trafficking Resource Center" data-placement="left" data-html="true"
-            data-content="<h1>Call</h1> 1-800-373-7888 <br> Or <br> Text &quot info or &quot help to 233733">
+            data-content="<h3>Call: 1-800-373-7888</h3>
+            <h3>Or</h3>
+            <h3>Text &quotinfo&quot or &quothelp&quot to 233733</h3>">
 
         <span class="glyphicon glyphicon-info-sign"></span> Get Help</button>
 </div>

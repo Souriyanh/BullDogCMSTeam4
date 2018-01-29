@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ad14467d-858e-4651-9bf2-043ade4b6c2a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php" afterPath="$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php" />
+      <change beforePath="$PROJECT_DIR$/humantrafficking/index.php" afterPath="$PROJECT_DIR$/humantrafficking/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/humantrafficking/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="450">
+              <caret line="30" column="65" lean-forward="false" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -27,14 +27,14 @@
       <file leaf-file-name="siteSpecificStyles.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
+            <state relative-caret-position="1363">
               <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="siteSpecificJS.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="siteSpecificJS.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="603">
@@ -55,9 +55,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/bulldogcms/frontend/includes/categoryList.php" />
-        <option value="$PROJECT_DIR$/humantrafficking/index.php" />
         <option value="$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php" />
         <option value="$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php" />
+        <option value="$PROJECT_DIR$/humantrafficking/index.php" />
       </list>
     </option>
   </component>
@@ -149,7 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1516760897785</updated>
       <workItem from="1516760900829" duration="324000" />
-      <workItem from="1517187344087" duration="812000" />
+      <workItem from="1517187344087" duration="1753000" />
     </task>
     <task id="LOCAL-00001" summary="This is a change to the quick exit GUI">
       <created>1517187453347</created>
@@ -165,11 +165,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517189107720</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="This is a change to the javascript that handles the function of the quick exit button">
+      <created>1517189204610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1517189204610</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1136000" />
+    <option name="totallyTimeSpent" value="2077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
@@ -205,7 +212,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This is a change to the quick exit GUI" />
     <MESSAGE value="Changes to the CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to the CSS" />
+    <MESSAGE value="This is a change to the javascript that handles the function of the quick exit button" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is a change to the javascript that handles the function of the quick exit button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -229,22 +237,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/humantrafficking/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
@@ -252,6 +244,22 @@
           <folding>
             <marker date="1517189173000" expanded="true" signature="411:456" ph="SELECT * FRO... headerLayout" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/humantrafficking/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="65" lean-forward="false" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
