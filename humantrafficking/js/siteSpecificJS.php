@@ -39,30 +39,35 @@ if (isset($floatHeader) && $floatHeader == 0) {
 //JavaScript that could be used might be onclick, onMouseOver, onMouseDown, onMouseOut, onMouseUp
 //Example:  onclick = 'helloWorld()'
 function helloWorld() {
-    alert('Hello, world!');
+alert('Hello, world!');
 }
 ////////////////////////////////////
 function quickExit() {
 
-    window.location = 'http://abconlinenews.info/localnews.php';
+window.location = 'http://abconlinenews.info/localnews.php';
 
 
- quickExit2();
+quickExit2();
 }
 
 function quickExit2(){
-    Window.open();
+Window.open();
 }
 
-//test
+
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+$('[data-toggle="tooltip"]').tooltip()
 })
 
 
 //Code from https://codepen.io/bsngr/pen/frDqh
 $('ul.nav li.dropdown').hover(function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
 }, function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+
+//Here is our popover function
+$(document).ready(function(){
+$('[data-toggle="popover"]').popover();
 });
