@@ -35,6 +35,7 @@
             $paginationLength = $row['paginationLength'];
             $enableAuthorNames = $row['enableAuthorNames'];
             $enableFullName = $row['enableFullName'];
+            $edgesLength = $row['edgesLength'];
 
         }
 
@@ -201,6 +202,14 @@
             <?php
             echo "<td>This value controls pagination by limiting the number of results displayed per page.</td>";
             echo "</tr>";
+            //Pagination Edges Size
+            echo "<tr>";
+            echo "<td>Pagination Edges</td>"
+            ?>
+            <td><input value = "<?php if(isset($edgesLength)) {echo $edgesLength;} ?>" type = "number" class = "form-control" name="edgesLength" min="1" required></td>
+            <?php
+            echo "<td>This value controls number of links listed before and after the current page in pagination lists.</td>";
+            echo "</tr>";
             ?>
         <?php   //This is setting up the update button with any changes to the site settings in the forms -Micah
                 //The variables are being changed to match what is in the form. -Micah
@@ -220,6 +229,7 @@
             $gaViewID =   htmlentities($_POST['gaViewID'], ENT_QUOTES, 'UTF-8');
             $paginationLength = $_POST['paginationLength'];
             $enableFullName =   $_POST['enableFullName'];
+            $edgesLength = $_POST['edgesLength'];
 
             //This is the actual update query -Micah
             //Need to check if any fields blank and post error before actually doing Update
@@ -230,7 +240,7 @@
                 IF (mysqli_stmt_prepare($siteSettingsPrepStmt,
                     "UPDATE siteSettings SET siteName =?, siteEmail =?, siteSearch = '{$siteSearch}',
                       articleSubmission = '{$articleSubmission}', enableLinks = '{$enableLinks}', enableLatestArticles = '{$enableLatestArticles}', enableEvents = '{$enableEvents}', enableNews = '{$enableNews}', enableSideWidget = '{$enableSideWidget}'
-                      , enableAuthorNames = '{$enableAuthorNames}', googleAnalyticsID =?, gaClientID =?, gaViewID =?, paginationLength = ?, enableFullName = '{$enableFullName}'
+                      , enableAuthorNames = '{$enableAuthorNames}', googleAnalyticsID =?, gaClientID =?, gaViewID =?, paginationLength = ?, enableFullName = '{$enableFullName}', edgesLength = ?
                       WHERE siteSettingID = '1'")) {
                     mysqli_stmt_bind_param($siteSettingsPrepStmt, "sssssi", $siteName, $siteEmail, $googleAnalyticsID, $gaClientID, $gaViewID, $paginationLength);
 

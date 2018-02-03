@@ -957,3 +957,39 @@ INSERT INTO `users` (`userID`, `roleID`, `firstName`, `lastName`, `email`, `user
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- --------------------------------------------------------
+
+--
+-- Update Statements
+--
+
+-- Eli Bergsma 1/20/17 navigations and categories to facilitate new header look
+
+-- Put events link in position 3
+
+UPDATE navigations
+SET navigationOrder = 3, navigationLocation = 2
+WHERE navigationID = 28;
+
+-- Create a new link for upcoming media pages
+
+INSERT INTO `navigations` (`navigationID`, `navigationName`, `navigationURL`, `navigationLocation`, `navigationVisible`, `navigationOrder`, `navButtonColor`, `navButtonSize`, `navJavaScript`) VALUES
+(26, 'Media', '#', 2, 1, 5, '', '', '');
+
+-- Move demographic links to Home dropdown
+
+UPDATE categories
+SET navigationID = 1
+WHERE categoryID IN (2,3,4,5,251);
+
+-- Add a value for pagination edges in siteSettings
+
+ALTER TABLE siteSettings
+ADD edgesLength int(10) NOT NULL DEFAULT '2';
+
+-- Update help page for Site Settings to include pagination and edges
+
+UPDATE helpPages
+SET helpPageContent = '<!DOCTYPE html>\r\n<html>\r\n<head>\r\n</head>\r\n<body>\r\n<h1>Site Setting Help</h1>\r\n<h2>Overview</h2>\r\n<p>The site settings page contains settings that relate to the overall website. On this page you can change the title of the website, the email of the website, the google analytics website ID that connects to the google analytics for the website, and several features that can be disabled.</p>\r\n<h2>Details</h2>\r\n<ul>\r\n<li><strong>Site Title</strong>: This is the site''s title. It will be what appears in the browser tab, the title of bookmarks to your site, and shown in search-engine results.</li>\r\n<li><strong>Site Email</strong>:&nbsp;This is the email notifications will be sent from.</li>\r\n<li><strong>Google Analytics website ID</strong>: This is the ID from the Google Analytics page that connects your website to google. When a google analytics account is created (most likely using the site email) you will be given this code. It should be put here in this setting.</li>\r\n<li><strong>Enable Article Submission Process</strong>: This enables the requried review and approval of anything added to the website by a contributor user. If this is disabled then anything contributors add will automatically be published to the website without required approval. (by default administrators do not need approval for anything they add.)</li>\r\n<li><strong>Enable Site Search</strong>:&nbsp;The Search box allows your users to search for articles based on their tags.If this is disabled, the search box will be removed from the website (Front end).</li>\r\n<li><strong>Enable Links Section</strong>:&nbsp;This enable or disables the Links side panel where you can provide your user with links to other sites and external resources. If this is disabled the links side panel will be removed from the website (Front end).</li>\r\n<li><strong>Enable Side Widget</strong>:&nbsp;This enables an additional section in the side panel where you can post additional content to be shone on all pages. If this is disabled the side widget section will be removed from the website (Front End).</li>\r\n<li><strong>Enable Author Names</strong>: This enables author names, dates and times to be displayed on the website right below the title of any articles that are added to the website (front end). If disabled then only the article Title and content will show. (The author, dates and times are still stored and can be viewed in the admin side.)</li>\r\n<li><strong>Items Per Page</strong>: This value sets the number of articles listed on a page. Articles beyond this number are listed in subsequent pages.</li>\r\n<li><strong>Pagination Edges</strong>: This value determines how many pagination links to include before and after the current page. If this number is too high based on the number of pages created, it will automatically correct itself.</li>\r\n</ul>\r\n</body>\r\n</html>'
+WHERE helpPageID = 19;

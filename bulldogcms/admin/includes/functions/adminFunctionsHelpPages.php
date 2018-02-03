@@ -113,6 +113,7 @@ function updateHelpPage($helpPageID){
 
 
         $query = "UPDATE helpPages SET helpPageTitle = '$helpPageTitle', helpPageContent = '$helpPageContent' WHERE helpPageID= '$helpPageID'";
+        $query = mysqli_real_escape_string($connection, $query);
         mysqli_query($connection, $query);
 
         mysqli_close($connection);
@@ -133,6 +134,7 @@ function deleteHelpPage() {
         $helpPageID= $_GET['delete'];
 
         $query = "DELETE FROM helpPages WHERE helpPageID = {$helpPageID} ";
+        $query = mysqli_real_escape_string($connection, $query);
         mysqli_query($connection, $query);
 
         mysqli_close($connection);

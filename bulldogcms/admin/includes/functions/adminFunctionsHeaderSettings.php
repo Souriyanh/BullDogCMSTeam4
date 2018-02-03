@@ -62,6 +62,7 @@ function updateHeaderSetting($headerLogoImg) {
               floatHeader = '{$floatHeader}', 
               headerTextArea1 = '{$headerTextArea1}' 
               WHERE headerID = '1'";
+        $query = mysqli_real_escape_string($connection, $query);
 
         $updateQuery = mysqli_query($connection, $query);
         confirmQuery($updateQuery);

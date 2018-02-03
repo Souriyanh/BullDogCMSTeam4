@@ -113,7 +113,8 @@
             }
         if ($display == null && $view == 'articlelist') { //index.php?view=articlelist
             ?>
-            <div class="col-xs-12">
+
+			<div class="col-sm-12">
             <h1 class="page-header">
                 Articles
             </h1>
@@ -122,21 +123,24 @@
             $selectSiteSettings = mysqli_query($connection, $siteSettingsQuery);
             while ($row = mysqli_fetch_assoc($selectSiteSettings)) {
                 $perPage = $row['paginationLength']; //pulls how many results are displayed per page from database
+                $edgesLength = $row['edgesLength']; //pulls how many pagination links should be displayed from database
             }
         } elseif ($display == null && $view == '1'){ //index.php
             ?>
             <div class="col-xs-12">
             <h1 class="page-header">
-                Latest Articles
+                Articles
             </h1>
             <?php
             $bodySettingsQuery = "SELECT * FROM bodySettings WHERE bodySettingID = '1'";
             $selectBodySettings = mysqli_query($connection, $bodySettingsQuery);
             while ($row = mysqli_fetch_assoc($selectBodySettings)) {
                 $perPage = $row['fpPagLength']; //pulls how many results are displayed per page from database
+                $edgesLength = $row['edgesLength']; //pulls how many pagination links should be displayed from database
             }
         } else{
             $perPage = 1;
+            $edgesLength = 1;
         }
 
             if (isset($_GET['page'])){
@@ -158,11 +162,12 @@
             $articleCountQuery .= "WHERE a.articleVisible = '1' AND at.articlePending = '0' AND a.categoryID <> '1'";
             $findCount = mysqli_query($connection, $articleCountQuery);
             $count = mysqli_num_rows($findCount);
-
+			
             $numPages = ceil($count / $perPage);
             session_start();
             $_SESSION['numPages'] = $numPages;//session variables passed to file calling this function
             $_SESSION['currentPage'] = $page;
+            $_SESSION['edgesLength'] = $edgesLength;
 
 //END PAGINATION
             $query = "SELECT *, DATE_FORMAT(articleCreateDate, \"%m-%d-%Y\") AS artDate, DATE_FORMAT(transactionDate, \"%m-%d-%Y\") AS transDate FROM articles a JOIN articleTransactions at ON a.articleID = at.articleID and a.articleTransactionID = at.transactionID ";
@@ -195,7 +200,7 @@
 
 	    //uses first 200 characters + ... if more than 200 characters
 	    if(strlen($articleContent)>350){
-		    $articleContent = substr($articleContent, 0, 300) . "...";
+		    $articleContent = substr($articleContent, 0, 200) . "...";
 	    }
 
 

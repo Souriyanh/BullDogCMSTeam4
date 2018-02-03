@@ -86,7 +86,7 @@ function findAllFooterNavigations() {
 function findIndexCategories() {
     global $connection;
 
-    $navigationQuery = "SELECT * FROM navigations WHERE navigationLocation IN(3,4) AND navigationVisible = '1' ORDER BY navigationOrder";
+    $navigationQuery = "SELECT * FROM navigations WHERE navigationLocation IN(3) AND navigationVisible = '1' ORDER BY navigationOrder";
     $select_all_navigations_query = mysqli_query($connection, $navigationQuery);
 
     while($row = mysqli_fetch_assoc($select_all_navigations_query)) {

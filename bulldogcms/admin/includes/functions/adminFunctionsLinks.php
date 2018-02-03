@@ -104,6 +104,7 @@ function updatelinks($linkID, $linkOrder, $originalLinkTypeID){
                 if ($thisLinkOrder == $tempLinkOrder) {
                     $tempLinkOrder += 1;
                     $query = "UPDATE links SET linkOrder = $tempLinkOrder WHERE linkID = $thisLinkID";
+                    $query = mysqli_real_escape_string($connection, $query);
                     $orderUpdate_query = mysqli_query($connection, $query);
                     confirmQuery($orderUpdate_query);
                 }
@@ -121,6 +122,7 @@ function updatelinks($linkID, $linkOrder, $originalLinkTypeID){
                 if ($thisLinkOrder == $tempLinkOrder) {
                     $tempLinkOrder -= 1;
                     $query = "UPDATE links SET linkOrder = $tempLinkOrder WHERE linkID= $thisLinkID";
+                    $query = mysqli_real_escape_string($connection, $query);
                     $update_query = mysqli_query($connection, $query);
                     confirmQuery($update_query);
                 }
@@ -129,6 +131,7 @@ function updatelinks($linkID, $linkOrder, $originalLinkTypeID){
 //END OF RE-ORDERING
 
         $query = "UPDATE links SET linkName = '$linkName', linkURL = '$linkURL', linkOrder = '$linkNewOrder', linkTypeID = '$linkTypeID' WHERE linkID= '$linkID'";
+        $query = mysqli_real_escape_string($connection, $query);
         mysqli_query($connection, $query);
     } else { //Link Type Was Changed
 //reorder links from previous type to avoid gap when this link is moved to new type
@@ -140,6 +143,7 @@ function updatelinks($linkID, $linkOrder, $originalLinkTypeID){
                     $thisLinkID = $row['linkID'];
 
                     $query = "UPDATE links SET linkOrder={$tempLinkOrder} WHERE linkID={$thisLinkID}";
+                    $query = mysqli_real_escape_string($connection, $query);
                     $update_query = mysqli_query($connection, $query);
 
                     confirmQuery($update_query);
@@ -157,6 +161,7 @@ function updatelinks($linkID, $linkOrder, $originalLinkTypeID){
             $nextOrderCount = $lastOrderCount + 1;
 
             $query = "UPDATE links SET linkName = '$linkName', linkURL = '$linkURL', linkOrder = '$nextOrderCount', linkTypeID = '$linkTypeID' WHERE linkID= '$linkID'";
+            $query = mysqli_real_escape_string($connection, $query);
             mysqli_query($connection, $query);
         }
 
@@ -193,6 +198,7 @@ function deleteLinks() {
 
 //DELETE LINK
         $query = "DELETE FROM links WHERE linkID = {$linkID}";
+        $query = mysqli_real_escape_string($connection, $query);
         $delete_query = mysqli_query($connection, $query);
         confirmquery($delete_query);
 
@@ -205,6 +211,7 @@ function deleteLinks() {
                 $thisLinkID = $row['linkID'];
 
                 $query = "UPDATE links SET linkOrder={$tempLinkOrder} WHERE linkID={$thisLinkID}";
+                $query = mysqli_real_escape_string($connection, $query);
                 $update_query = mysqli_query($connection, $query);
 
                 confirmQuery($update_query);

@@ -268,6 +268,7 @@ function changeArticleVisibility() {
         $articleTitle = $_GET['title'];
 
         $query = "UPDATE articles SET articleVisible = '0' WHERE articleID = $articleID";
+        $query = mysqli_real_escape_string($connection, $query);
         $changeVisible = mysqli_query($connection, $query);
             ?>
             <script type="text/javascript">
@@ -290,6 +291,7 @@ function changeArticleVisibility() {
         $articleTitle = $_GET['title'];
 
         $query = "UPDATE articles SET articleVisible = '1' WHERE articleID = $articleID";
+        $query = mysqli_real_escape_string($connection, $query);
         $changeVisible = mysqli_query($connection, $query);
         ?>
         <script type="text/javascript">
@@ -312,6 +314,7 @@ function changeArticleVisibility() {
         $articleTitle = $_GET['title'];
 
         $query = "UPDATE articles SET articleVisible = '0' WHERE articleID = $articleID";
+        $query = mysqli_real_escape_string($connection, $query);
         $changeVisible = mysqli_query($connection, $query);
         ?>
         <script type="text/javascript">
@@ -334,6 +337,7 @@ function changeArticleVisibility() {
         $articleTitle = $_GET['title'];
 
         $query = "UPDATE articles SET articleVisible = '1' WHERE articleID = $articleID";
+        $query = mysqli_real_escape_string($connection, $query);
         $changeVisible = mysqli_query($connection, $query);
         ?>
         <script type="text/javascript">
@@ -372,9 +376,11 @@ function changeArticleArchived() {
         $articleTitle = $_GET['title'];
 
         $transactionQuery = "UPDATE articleTransactions SET articlePending = '2' WHERE transactionID = $transactionID";
+        $transactionQuery = mysqli_real_escape_string($connection, $transactionQuery);
         $changeTransaction = mysqli_query($connection, $transactionQuery);
 
         $articleQuery = "UPDATE articles SET articleVisible = '0', articleLock ='1' WHERE articleTransactionID = $transactionID";
+        $articleQuery = mysqli_real_escape_string($connection, $articleQuery);
         $changeArticle = mysqli_query($connection, $articleQuery);
         ?>
         <script type="text/javascript">
@@ -396,9 +402,11 @@ function changeArticleArchived() {
         $articleTitle = $_GET['title'];
 
         $transactionQuery = "UPDATE articleTransactions SET articlePending = '1' WHERE transactionID = $transactionID";
+        $transactionQuery = mysqli_real_escape_string($connection, $transactionQuery);
         $changeTransaction = mysqli_query($connection, $transactionQuery);
 
         $articleQuery = "UPDATE articles SET articleVisible = '0' WHERE articleTransactionID = $transactionID";
+        $articleQuery = mysqli_real_escape_string($connection, $articleQuery);
         $changeArticle = mysqli_query($connection, $articleQuery);
         ?>
         <script type="text/javascript">
@@ -438,9 +446,11 @@ function changeArticlePending() {
         $articleTitle = $_GET['title'];
 
         $transactionQuery = "UPDATE articleTransactions SET articlePending = '0' WHERE transactionID = $transactionID";
+        $transactionQuery = mysqli_real_escape_string($connection, $transactionQuery);
         $changeTransaction = mysqli_query($connection, $transactionQuery);
 
         $articleQuery = "UPDATE articles SET articleVisible = '1' WHERE articleTransactionID = $transactionID";
+        $articleQuery = mysqli_real_escape_string($connection, $articleQuery);
         $changeArticle = mysqli_query($connection, $articleQuery);
         ?>
         <script type="text/javascript">
@@ -464,9 +474,11 @@ function changeArticlePending() {
         $articleTitle = $_GET['title'];
 
         $transactionQuery = "UPDATE articleTransactions SET articlePending = '0' WHERE transactionID = $transactionID";
+        $transactionQuery = mysqli_real_escape_string($connection, $transactionQuery);
         $changeTransaction = mysqli_query($connection, $transactionQuery);
 
         $articleQuery = "UPDATE articles SET articleVisible = '1' WHERE articleTransactionID = $transactionID";
+        $articleQuery = mysqli_real_escape_string($connection, $articleQuery);
         $changeArticle = mysqli_query($connection, $articleQuery);
         ?>
         <script type="text/javascript">
@@ -516,6 +528,7 @@ function deleteArticle()
 
         //Attempt to delete from articles table.
         $query1 = "DELETE FROM articles WHERE articleID = {$articleID} ";
+        $query1 = mysqli_real_escape_string($connection, $query1);
         $articleDeleteQuery1 = mysqli_multi_query($connection, $query1);
         //Transaction validate point.
         if (!$articleDeleteQuery1) {
@@ -526,6 +539,7 @@ function deleteArticle()
 
         //Attempt to delete from articleTransactions table.
         $query2 = "DELETE FROM articleTransactions WHERE articleID = {$articleID} ";
+        $query2 = mysqli_real_escape_string($connection, $query2);
         $articleDeleteQuery2 = mysqli_query($connection, $query2);
         if (!$articleDeleteQuery2) {
             $transactFlag = false;
@@ -650,6 +664,7 @@ function duplicateArticle()
 
         //update articles table with transactionID
         $articleUpdate = "UPDATE articles SET articleTransactionID = '{$newTransactionID}' WHERE articleID = {$newArticleID}";
+        $articleUpdate = mysqli_real_escape_string($connection, $articleUpdate);
         $articleUpdateQuery = mysqli_multi_query($connection, $articleUpdate);
         //Transaction validate point.
         if (!$articleUpdateQuery) {

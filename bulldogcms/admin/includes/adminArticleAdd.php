@@ -93,6 +93,7 @@ if(isset($_POST['articleAdd'])) {
 
                     //Now Update the articles table the transactionID just inserted and replace the default 999 and unlock the article
                     $articleUpdate .= "UPDATE articles SET articleTransactionID = '{$transactionID}', articleLock = '0' WHERE articleID = {$articleID}";
+                    $articleUpdate = mysqli_real_escape_string($connection, $articleUpdate);
                     $articleUpdateQuery = mysqli_multi_query($connection, $articleUpdate);
                     //Transaction validate point.
                     if (!$articleUpdateQuery) {

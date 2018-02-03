@@ -7,14 +7,17 @@ header('content-type: text/css; charset: UTF-8');
 include "../../bulldogcms/frontend/css/bootstrap.min.php";
 ?>
 
+<!-- ../../bulldogcms/frontend/css/blog-home.php -->
 <?php
 include "../../bulldogcms/frontend/css/blog-home.php";
 ?>
 
+<!-- ../../bulldogcms/frontend/css/heroic-features.php -->
 <?php
 include "../../bulldogcms/frontend/css/heroic-features.php";
 ?>
 
+<!-- ../../bulldogcms/frontend/css/styles.php -->
 <?php
 include "../../bulldogcms/frontend/css/styles.php";
 ?>
@@ -29,13 +32,13 @@ include "../../bulldogcms/frontend/css/styles.php";
 position: fixed;
 bottom: 0px;
 right: 0px;
-height: 150px;
+height: 167px;
 width: 245px;
-background-color: #C77B7B;
+background-color: #d31528;
 color: black;
 font-weight: bold;
 z-index: 3;
-border: 1px solid #d43f3a;
+border: 3px solid #000000;
 padding-right: 20px;
 margin-right: -16px;
 margin-bottom: 50px;
@@ -56,7 +59,7 @@ line-height: 2px;
 text-decoration: underline;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1000px) {
 #quickExit {
 position: fixed;
 bottom: 0px;
@@ -65,11 +68,11 @@ left: 0px;
 width: 100%;
 height: auto;
 padding:0px;
-background-color: #C77B7B;
+background-color: #1a63a3;
 color: black;
 font-weight: bold;
 z-index: 3;
-border: 1px solid #d43f3a;
+border: 3px solid #000000;
 margin: 0;
 border-radius: 0;
 }
@@ -87,6 +90,3 @@ height: 180px;
 width: 100%;
 }
 }
-
-
-

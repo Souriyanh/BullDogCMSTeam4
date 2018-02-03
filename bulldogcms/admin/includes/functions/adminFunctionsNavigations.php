@@ -238,11 +238,13 @@ function deleteNavigation() {
                 if ($navigationOrder > $navOrder) {
                     $navigationOrder--;
                     $updateNavOrderQuery = "UPDATE navigations SET navigationOrder=$navigationOrder WHERE navigationID = $navigationID";
+                    $updateNavOrderQuery = mysqli_real_escape_string($connection, $updateNavOrderQuery);
                     $confirm = mysqli_query($connection, $updateNavOrderQuery);
                     confirmQuery($confirm);
                 }
             }
             $query = "DELETE FROM navigations WHERE navigationID = {$navID} ";
+            $query = mysqli_real_escape_string($connection, $query);
             $delete_query = mysqli_query($connection, $query);
             confirmquery($delete_query);
 
@@ -274,6 +276,7 @@ function editVisibility() {
 
         $navigationID = $_GET['setvisibleyes'];
         $query = "UPDATE navigations SET navigationVisible = '1' WHERE navigationID = {$navigationID} ";
+        $query = mysqli_real_escape_string($connection, $query);
         mysqli_query($connection, $query);
 
         $navigationName = htmlentities($_GET['name'], ENT_QUOTES, 'UTF-8');
@@ -297,6 +300,7 @@ function editVisibility() {
 
         $navigationID = $_GET['setvisibleno'];
         $query = "UPDATE navigations SET navigationVisible = '0' WHERE navigationID = {$navigationID} ";
+        $query = mysqli_real_escape_string($connection, $query);
         mysqli_query($connection, $query);
 
         $navigationName = htmlentities($_GET['name'], ENT_QUOTES, 'UTF-8');
@@ -343,6 +347,7 @@ function updateNavigation($navigationID,$navigationOrder) {
                     if ($thisNavOrder == $tempNavOrder) {
                         $tempNavOrder += 1;
                         $query = "UPDATE navigations SET navigationOrder = $tempNavOrder WHERE navigationID = $thisNavID";
+                        $query = mysqli_real_escape_string($connection, $query);
                         $orderUpdate_query = mysqli_query($connection, $query);
                         confirmQuery($orderUpdate_query);
                     }
@@ -360,6 +365,7 @@ function updateNavigation($navigationID,$navigationOrder) {
                     if ($thisNavOrder == $tempNavOrder) {
                         $tempNavOrder -= 1;
                         $query = "UPDATE navigations SET navigationOrder = $tempNavOrder WHERE navigationID= $thisNavID";
+                        $query = mysqli_real_escape_string($connection, $query);
                         $update_query = mysqli_query($connection, $query);
                         confirmQuery($update_query);
                     }
@@ -371,6 +377,7 @@ function updateNavigation($navigationID,$navigationOrder) {
                 $query = "UPDATE navigations SET navigationName = '{$navigationName}',  ";
                 $query .= "navigationLocation = '{$navigationLocation}', navButtonSize = '{$navButtonSize}', ";
                 $query .= "navButtonColor = '{$navButtonColor}' WHERE navigationID = '{$navigationID}' ";
+                $query = mysqli_real_escape_string($connection, $query);
 
                 $update_query = mysqli_query($connection, $query);
 
@@ -381,6 +388,7 @@ function updateNavigation($navigationID,$navigationOrder) {
                 $query .= "navButtonSize = '{$navButtonSize}', ";
                 $query .= "navButtonColor = '{$navButtonColor}', ";
                 $query .= "navJavaScript = '{$navJavaScript}' WHERE navigationID = '{$navigationID}' ";
+                $query = mysqli_real_escape_string($connection, $query);
 
                 $update_query = mysqli_query($connection, $query);
 

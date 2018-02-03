@@ -1,18 +1,12 @@
 <?php
-
 //!!!!!Start styles.php
-
 include "../includes/db.php";
-
 //set content-type so the browser interprets it as a css file
 //header('content-type: text/css; charset: UTF-8');
-
 //get all of the user-defined color data from the database
 //global $connection;
-
 $query = "SELECT * FROM themeColors WHERE themeColorID = '1' ";
 $getColors = mysqli_query($connection, $query);
-
 while($row = mysqli_fetch_assoc($getColors)){
     $headerBackground = $row['headerBackground'];
     $footerBackground = $row['footerBackground'];
@@ -33,21 +27,17 @@ while($row = mysqli_fetch_assoc($getColors)){
     $pageHeading = $row['pageHeading'];
     $dividingLines = $row['dividingLines'];
 }
-
 $query2 = "SELECT * FROM headerLayout WHERE headerID='1' ";
 $getHeaderLayout = mysqli_query($connection, $query2);
-
 while($row = mysqli_fetch_assoc($getHeaderLayout)){
     $headerHeight = $row['headerHeight'];
     $headerHTML = $row['headerHTML'];
 }
-
 if (isset($headerHTML) && $headerHTML != ""){
     $actualHeaderHeight = $headerHeight + 50;
 } else {
     $actualHeaderHeight = $headerHeight;
 }
-
 ?>
 
 /*Set user defined colors*/
@@ -222,8 +212,10 @@ width: 98%;
 margin-top: 0px;
 }
 
-.search {
+.searchBar {
 margin-top: 10px;
+width: 27em;
+display: block;
 float: right;
 }
 
@@ -366,9 +358,9 @@ width:49.99999%
 }
 
 .v-center {
-    height: <?php if(isset($headerHeight)) {echo $headerHeight . "px";} ?>;
-    display: block;
-    float: left;
+height: <?php if(isset($headerHeight)) {echo $headerHeight . "px";} ?>;
+display: block;
+float: left;
 }
 
 .navbar-nav-footer {
@@ -388,6 +380,13 @@ margin-bottom: 15px;
 @media (max-width:670px){
 .headerTitle{
 font-size: 1.2em;
+}
+}
+
+@media (max-width:767px){
+.searchBar {
+float: none;
+margin: auto;
 }
 }
 
