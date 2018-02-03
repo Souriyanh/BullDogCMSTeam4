@@ -1,0 +1,80 @@
+[30-Jan-2018 17:20:55 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[30-Jan-2018 17:20:58 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[30-Jan-2018 17:20:58 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[30-Jan-2018 17:20:58 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 17:20:58 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 17:20:58 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[30-Jan-2018 17:20:58 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[30-Jan-2018 19:40:37 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[30-Jan-2018 19:40:40 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[30-Jan-2018 19:40:40 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[30-Jan-2018 19:40:40 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 19:40:40 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 19:40:40 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[30-Jan-2018 19:40:40 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[30-Jan-2018 19:43:48 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[30-Jan-2018 19:43:48 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[30-Jan-2018 19:43:48 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[30-Jan-2018 19:43:48 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 19:43:48 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 19:43:48 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[30-Jan-2018 19:43:48 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[30-Jan-2018 19:43:51 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[30-Jan-2018 19:43:51 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[30-Jan-2018 19:43:51 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[30-Jan-2018 19:43:51 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 19:43:51 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 19:43:51 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[30-Jan-2018 19:43:51 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[30-Jan-2018 19:48:09 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[30-Jan-2018 19:48:09 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[30-Jan-2018 19:48:09 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[30-Jan-2018 19:48:09 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 19:48:09 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[30-Jan-2018 19:48:09 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[30-Jan-2018 19:48:09 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:23:58 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[03-Feb-2018 12:24:00 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[03-Feb-2018 12:24:00 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[03-Feb-2018 12:24:00 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:24:00 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:24:00 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:24:00 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:27:19 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[03-Feb-2018 12:27:19 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[03-Feb-2018 12:27:19 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[03-Feb-2018 12:27:19 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:27:19 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:27:19 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:27:19 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:56:53 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[03-Feb-2018 12:56:56 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[03-Feb-2018 12:56:56 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[03-Feb-2018 12:56:56 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:56:56 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:56:56 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:56:56 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:57:17 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[03-Feb-2018 12:57:17 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[03-Feb-2018 12:57:17 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[03-Feb-2018 12:57:18 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:57:18 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:57:18 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:57:18 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:57:26 America/Denver] PHP Notice:  Undefined variable: argv in /home3/kylejost/public_html/blackmitten/ht/amber/index.php on line 5
+[03-Feb-2018 12:57:26 America/Denver] PHP Notice:  Undefined index: query in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 20
+[03-Feb-2018 12:57:26 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 23
+[03-Feb-2018 12:57:26 America/Denver] PHP Warning:  file_get_contents(http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&amp;orgPrefix=NCMC&amp;caseNum=&amp;seqNum=1&amp;caseLang=en_US&amp;searchLang=en_US&amp;LanguageId=en_US): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:57:26 America/Denver] PHP Notice:  Trying to get property of non-object in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 24
+[03-Feb-2018 12:57:26 America/Denver] PHP Notice:  Undefined index: caseNum in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
+[03-Feb-2018 12:57:26 America/Denver] PHP Warning:  Creating default object from empty value in /home3/kylejost/public_html/blackmitten/ht/amber/AmberAlert.php on line 27
