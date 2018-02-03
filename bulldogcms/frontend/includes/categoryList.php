@@ -34,6 +34,6 @@ switch($view) {
         findIndexCategories();
         break;
 }
-
+//This has been reverted to original state
 ?>
 

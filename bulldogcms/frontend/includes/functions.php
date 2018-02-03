@@ -142,6 +142,7 @@ function listFECatByNavID() {
     }
 
     $navigationQuery = "SELECT * FROM navigations WHERE navigationID = $navigationID AND navigationVisible = '1'";
+	// $navigationQuery = "SELECT * FROM navigations WHERE navigationID = $navigationID";
     $select_all_navigations_query = mysqli_query($connection, $navigationQuery);
 
     while($row = mysqli_fetch_assoc($select_all_navigations_query)) {
@@ -209,10 +210,9 @@ function listFECatByNavName() {
         echo "</div>";
 
 
-        //if events page then add in the Calendar and list out the categories
+        //if events page then add in the Calendar and list out the categories then past events
         if ($navigationName == 'Events') {
             echo "<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12 hero-feature'>";
-            //'col-lg-3 col-md-4 col-sm-6 col-xs-12 hero-feature'
             echo "<h2>View Full Calendar</h2>";
             // echo "<div class='page-header col-xs-12'>";//this applies a line header from left to right in the body
             $SomeName = "Calendar";
