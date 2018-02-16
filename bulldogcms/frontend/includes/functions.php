@@ -142,6 +142,7 @@ function listFECatByNavID() {
     }
 
     $navigationQuery = "SELECT * FROM navigations WHERE navigationID = $navigationID AND navigationVisible = '1'";
+	// $navigationQuery = "SELECT * FROM navigations WHERE navigationID = $navigationID";
     $select_all_navigations_query = mysqli_query($connection, $navigationQuery);
 
     while($row = mysqli_fetch_assoc($select_all_navigations_query)) {
@@ -209,38 +210,78 @@ function listFECatByNavName() {
         echo "</div>";
 
 
-        $categoryQuery = "SELECT * FROM categories WHERE navigationID ='{$navigationID}' AND categoryVisible = '1' ORDER BY categoryOrder";
-        $select_all_categories_query = mysqli_query($connection, $categoryQuery);
-        while ($row = mysqli_fetch_assoc($select_all_categories_query)) {
-            $categoryID = $row['categoryID'];
-            $categoryName = $row['categoryName'];
-            $categoryImage = $row['categoryImage'];
-            $categoryImage = "uploads/" . $categoryImage;
-
-            //create category description snippet for viewing
-            //uses first 50 characters + ... if more than 50 characters
-            if (strlen($categoryName) > 30) {
-                $categoryName = substr($categoryName, 0, 20) . "...";
-            }
-
+        //if events page then add in the Calendar and list out the categories then past events
+        if ($navigationName == 'Events') {
             echo "<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12 hero-feature'>";
-            echo "<div class='thumbnail'><div class='imageContainer'>";
-            if(isset($categoryImage) && $categoryImage != 'uploads/' && file_exists($categoryImage)) {
-                echo "<a href='index.php?view=articlelist&display=articlesbycat&category=$categoryID'><img class='img-responsive img-rounded catListImage' src='$categoryImage' alt='$categoryName' ></a>";
-                /*echo "<div style='background-image: url({$categoryImage});'></div>";*/
-            }
-            echo "</div><div class='caption dont-break-out'>";
-            echo "<div class='catListContentArea'><a href='index.php?view=articlelist&display=articlesbycat&category=$categoryID'><h3>{$categoryName}</h3></a></div>";
-            echo "<a href='index.php?view=articlelist&display=articlesbycat&category=$categoryID' class='btn btn-primary'>More Info</a>";
+            echo "<h2>View Full Calendar</h2>";
+            // echo "<div class='page-header col-xs-12'>";//this applies a line header from left to right in the body
+            $SomeName = "Calendar";
+            $image_url='uploads/images/CalendarImage.jpg';
+            echo "<a href='./bdCalendar.php'><img class='img-responsive img-rounded catListImage' src='$image_url' alt='$SomeName' ></a>";
             echo "</div>";
-            echo "</div>";
-            echo "</div>";
-        }
-        echo "</div>";
-    }
-    echo "</div>";
+            $categoryQuery = "SELECT * FROM categories WHERE navigationID ='{$navigationID}' AND categoryVisible = '1' ORDER BY categoryOrder";
+            $select_all_categories_query = mysqli_query($connection, $categoryQuery);
+            while ($row = mysqli_fetch_assoc($select_all_categories_query)) {
+                $categoryID = $row['categoryID'];
+                $categoryName = $row['categoryName'];
+                $categoryImage = $row['categoryImage'];
+                $categoryImage = "uploads/" . $categoryImage;
+                //create category description snippet for viewing
+                //uses first 50 characters + ... if more than 50 characters
+                if (strlen($categoryName) > 30) {
+                    $categoryName = substr($categoryName, 0, 20) . "...";
+                }
 
-}
+                echo "<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12 hero-feature'>";
+                echo "<div class='thumbnail'><div class='imageContainer'>";
+                if(isset($categoryImage) && $categoryImage != 'uploads/' && file_exists($categoryImage)) {
+                    echo "<a href='index.php?view=articlelist&display=articlesbycat&category=$categoryID'><img class='img-responsive img-rounded catListImage' src='$categoryImage' alt='$categoryName' ></a>";
+                    /*echo "<div style='background-image: url({$categoryImage});'></div>";*/
+                }
+                echo "</div><div class='caption dont-break-out'>";
+                echo "<div class='catListContentArea'><a href='index.php?view=articlelist&display=articlesbycat&category=$categoryID'><h3>{$categoryName}</h3></a></div>";
+                echo "<a href='index.php?view=articlelist&display=articlesbycat&category=$categoryID' class='btn btn-primary'>More Info</a>";
+                echo "</div>";
+                echo "</div>";
+                echo "</div>";
+            }//end while loop
+            echo "<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12 hero-feature'>";
+            echo "<h2>Past Events</h2>";
+            $image_url='uploads/images/PastEventSummary.png';
+            echo "<a href='index.php?view=articlelist&display=articlesbycat&category=$navigationName'><img class='img-responsive img-rounded catListImage' src='$image_url' alt='Past Events' ></a>";
+            echo "</div>";
+        } else {
+            $categoryQuery = "SELECT * FROM categories WHERE navigationID ='{$navigationID}' AND categoryVisible = '1' ORDER BY categoryOrder";
+            $select_all_categories_query = mysqli_query($connection, $categoryQuery);
+            while ($row = mysqli_fetch_assoc($select_all_categories_query)) {
+                $categoryID = $row['categoryID'];
+                $categoryName = $row['categoryName'];
+                $categoryImage = $row['categoryImage'];
+                $categoryImage = "uploads/" . $categoryImage;
+                //create category description snippet for viewing
+                //uses first 50 characters + ... if more than 50 characters
+                if (strlen($categoryName) > 30) {
+                    $categoryName = substr($categoryName, 0, 20) . "...";
+                }
+
+                echo "<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12 hero-feature'>";
+                echo "<div class='thumbnail'><div class='imageContainer'>";
+                if(isset($categoryImage) && $categoryImage != 'uploads/' && file_exists($categoryImage)) {
+                    echo "<a href='index.php?view=articlelist&display=articlesbycat&category=$categoryID'><img class='img-responsive img-rounded catListImage' src='$categoryImage' alt='$categoryName' ></a>";
+                    /*echo "<div style='background-image: url({$categoryImage});'></div>";*/
+                }
+                echo "</div><div class='caption dont-break-out'>";
+                echo "<div class='catListContentArea'><a href='index.php?view=articlelist&display=articlesbycat&category=$categoryID'><h3>{$categoryName}</h3></a></div>";
+                echo "<a href='index.php?view=articlelist&display=articlesbycat&category=$categoryID' class='btn btn-primary'>More Info</a>";
+                echo "</div>";
+                echo "</div>";
+                echo "</div>";
+            }//end while loop
+        }
+        echo "</div>";//end div class page-header L210
+    }
+    echo "</div>"; //end of div class row
+}//end Function Called listFECatByNavName
 
 function listLinks() {
     global $connection;
