@@ -1,18 +1,12 @@
 <?php
-
 //!!!!!Start styles.php
-
 include "../includes/db.php";
-
 //set content-type so the browser interprets it as a css file
 //header('content-type: text/css; charset: UTF-8');
-
 //get all of the user-defined color data from the database
 //global $connection;
-
 $query = "SELECT * FROM themeColors WHERE themeColorID = '1' ";
 $getColors = mysqli_query($connection, $query);
-
 while($row = mysqli_fetch_assoc($getColors)){
     $headerBackground = $row['headerBackground'];
     $footerBackground = $row['footerBackground'];
@@ -33,21 +27,17 @@ while($row = mysqli_fetch_assoc($getColors)){
     $pageHeading = $row['pageHeading'];
     $dividingLines = $row['dividingLines'];
 }
-
 $query2 = "SELECT * FROM headerLayout WHERE headerID='1' ";
 $getHeaderLayout = mysqli_query($connection, $query2);
-
 while($row = mysqli_fetch_assoc($getHeaderLayout)){
     $headerHeight = $row['headerHeight'];
     $headerHTML = $row['headerHTML'];
 }
-
 if (isset($headerHTML) && $headerHTML != ""){
     $actualHeaderHeight = $headerHeight + 50;
 } else {
     $actualHeaderHeight = $headerHeight;
 }
-
 ?>
 
 /*Set user defined colors*/
@@ -222,10 +212,11 @@ width: 98%;
 margin-top: 0px;
 }
 
-.search {
+.searchBar {
 margin-top: 10px;
+width: 27em;
+display: block;
 float: right;
-width: 20%;
 }
 
 .thumbnail {
@@ -392,6 +383,16 @@ font-size: 1.2em;
 }
 }
 
+@media (max-width:767px){
+.searchBar {
+float: none;
+margin: auto;
+}
+.navbar-nav > li {
+text-align: center;
+}
+}
+
 @media(min-width:768px){
 p {
 font-size: 17px;
@@ -463,3 +464,96 @@ text-align: center;
 font-size: 1em;
 }
 }
+
+<!-- Missing Child Plugin -->
+    .ncmec-banner-vertical #ncmec_container {
+        width: 100%;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-header {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid #404041;
+        border-radius: 10px 10px 0 0;
+        padding: 16px 16px;
+        text-align: center;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-header #ncmec_help_me_link
+        {
+        color: #404041;
+        text-align: center;
+        display: block;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-body {
+        padding: 16px;
+        background: #404041;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_photo
+        {
+        float: none;
+        margin: 10px auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_name_link
+        {
+        font-family: 'Futura', 'Arial', sans-serif;
+        font-size: 16px;
+        color: #92D6E3;
+        margin: 0 0 5px;
+        text-decoration: none;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_info {
+        font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
+        font-size: 11px;
+        line-height: 13px;
+        color: #fff;
+        margin: 10px auto;
+        text-decoration: none;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-body a, .ncmec-banner-vertical #ncmec_container .banner-body a:hover{
+        text-decoration: none;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_info strong
+        {
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: normal;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_click_photo_text
+        {
+        color: #92D6E3;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_controls {
+        margin: 10px auto;
+    }
+
+    .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_controls img
+        {
+        margin-right: 20px;
+    }
+
+    @media ( min-width : 768px) and (max-width: 768px) and (orientation:
+        portrait) {
+        #ncmec_click_photo_text, #ncmec_click_photo {
+            text-align: right;
+        }
+    }
+
+    @media (max-width: 370px) {
+        .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_controls img {
+            margin-right: 5px !important;
+        }
+    }
+<!-- END Missing Child -->

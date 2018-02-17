@@ -78,5 +78,17 @@
             </ul>
         </div>
         <?php ENDIF; //Other end of the if statement surrounding the links well html -Micah?>
+
+        <!-- Missing Kids -->
+        <div class="well">
+            <div class="ncmec-banner-vertical">
+                <div id="ncmec_container">
+                </div>
+            </div>
+            <input type="hidden" id="serverName" value="http://banner-missingkids-stage.adobecqms.net">
+            <input type="hidden" id="endpointName" value="http://betamk.missingkids.org">
+            <input type="hidden" id="siteDomainName" value="http://missingkids-stage.adobecqms.net">
+            <script src="http://banner-missingkids-stage.adobecqms.net/js/vertical.js"></script>
+        </div>
     <?php ENDIF; //End of the if statement if all three are blank -Micah?>
     </div>
