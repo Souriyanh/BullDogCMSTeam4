@@ -17,6 +17,7 @@ margin-bottom: 30px;
 height: 300px;
 }
 
+
 footer {
 margin: 50px 0;
 }

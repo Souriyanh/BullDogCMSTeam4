@@ -180,6 +180,7 @@ left: 0;
 right: 0;
 bottom: 0;
 z-index: 1;
+text-shadow: 2px 2px #000000;
 }
 .hero p{
 color: <?php if(isset($heroicFont)) {echo "#" . $heroicFont;} ?>;
