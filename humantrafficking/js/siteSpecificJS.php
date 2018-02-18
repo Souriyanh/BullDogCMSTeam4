@@ -54,6 +54,27 @@ function quickExit2(){
 Window.open();
 }
 
+//Code from https://css-tricks.com/website-escape
+$(function() {
+
+$("#quick-exit").on("click", function(e) {
+quickExit();
+});
+
+$("#quick-exit a").on("click", function(e) {
+// allow the (?) link to work
+e.stopPropagation();
+});
+
+$(document).keyup(function(e) {
+if (e.keyCode == 27) { // escape key
+quickExit();
+}
+});
+
+});
+
+
 
 $(function () {
 $('[data-toggle="tooltip"]').tooltip()

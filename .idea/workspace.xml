@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ad14467d-858e-4651-9bf2-043ade4b6c2a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bulldogcms/frontend/css/heroic-features.php" afterPath="$PROJECT_DIR$/bulldogcms/frontend/css/heroic-features.php" />
+      <change beforePath="$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php" afterPath="$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,22 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="siteSpecificStyles.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php">
+      <file leaf-file-name="siteSpecificJS.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="heroic-features.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/css/heroic-features.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="162">
+              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+              <folding>
+                <marker date="1518918055000" expanded="true" signature="411:456" ph="SELECT * FRO... headerLayout" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,10 +40,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/bulldogcms/frontend/includes/categoryList.php" />
-        <option value="$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php" />
         <option value="$PROJECT_DIR$/humantrafficking/index.php" />
         <option value="$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php" />
         <option value="$PROJECT_DIR$/bulldogcms/frontend/css/heroic-features.php" />
+        <option value="$PROJECT_DIR$/bulldogcms/frontend/css/styles.php" />
+        <option value="$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php" />
       </list>
     </option>
   </component>
@@ -93,20 +86,13 @@
             <path>
               <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
               <item name="BullDogCMSTeam4" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bulldogcms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="humantrafficking" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
               <item name="BullDogCMSTeam4" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bulldogcms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BullDogCMSTeam4" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bulldogcms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="humantrafficking" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
@@ -151,7 +137,7 @@
       <workItem from="1516760900829" duration="324000" />
       <workItem from="1517187344087" duration="3013000" />
       <workItem from="1517700769052" duration="420000" />
-      <workItem from="1518890735698" duration="2987000" />
+      <workItem from="1518890735698" duration="5345000" />
     </task>
     <task id="LOCAL-00001" summary="This is a change to the quick exit GUI">
       <created>1517187453347</created>
@@ -195,11 +181,25 @@
       <option name="project" value="LOCAL" />
       <updated>1517190951781</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Small change to the css frontend">
+      <created>1518908762166</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1518908762166</updated>
+    </task>
+    <task id="LOCAL-00008" summary="change to the hero h1 css">
+      <created>1518913551944</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1518913551945</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6744000" />
+    <option name="totallyTimeSpent" value="9102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="6" />
@@ -238,7 +238,9 @@
     <MESSAGE value="This is a change to the javascript that handles the function of the quick exit button" />
     <MESSAGE value="This is a small change to the quick exit button." />
     <MESSAGE value="Small change to the css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small change to the css" />
+    <MESSAGE value="Small change to the css frontend" />
+    <MESSAGE value="change to the hero h1 css" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to the hero h1 css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -266,7 +268,7 @@
         <state relative-caret-position="585">
           <caret line="39" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="3" />
           <folding>
-            <marker date="1517189173000" expanded="true" signature="411:456" ph="SELECT * FRO... headerLayout" />
+            <marker date="1518918055000" expanded="true" signature="411:456" ph="SELECT * FRO... headerLayout" />
           </folding>
         </state>
       </provider>
@@ -300,16 +302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4472">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <marker date="1517189173000" expanded="true" signature="411:456" ph="SELECT * FRO... headerLayout" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,26 +497,26 @@
         <state relative-caret-position="-3993">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517187335000" expanded="true" signature="231:344" ph="SELECT * FRO... navigations" />
-            <marker date="1517187335000" expanded="true" signature="943:1053" ph="SELECT * FRO... categories" />
-            <marker date="1517187335000" expanded="true" signature="3401:3514" ph="SELECT * FRO... navigations" />
-            <marker date="1517187335000" expanded="true" signature="4090:4199" ph="SELECT * FRO... navigations" />
-            <marker date="1517187335000" expanded="true" signature="4803:4914" ph="SELECT * FRO... categories" />
-            <marker date="1517187335000" expanded="true" signature="6862:6950" ph="SELECT * FRO... navigations" />
-            <marker date="1517187335000" expanded="true" signature="7437:7548" ph="SELECT * FRO... categories" />
-            <marker date="1517187335000" expanded="true" signature="9569:9665" ph="SELECT * FRO... navigations" />
-            <marker date="1517187335000" expanded="true" signature="10152:10263" ph="SELECT * FRO... categories" />
-            <marker date="1517187335000" expanded="true" signature="12032:12093" ph="SELECT * FRO... links" />
-            <marker date="1517187335000" expanded="true" signature="12423:12484" ph="SELECT * FRO... links" />
-            <marker date="1517187335000" expanded="true" signature="12821:12949" ph="SELECT * FRO... articles" />
-            <marker date="1517187335000" expanded="true" signature="13546:13644" ph="SELECT * FRO... categories" />
+            <marker date="1518908773000" expanded="true" signature="231:344" ph="SELECT * FRO... navigations" />
+            <marker date="1518908773000" expanded="true" signature="943:1053" ph="SELECT * FRO... categories" />
+            <marker date="1518908773000" expanded="true" signature="3401:3514" ph="SELECT * FRO... navigations" />
+            <marker date="1518908773000" expanded="true" signature="4090:4199" ph="SELECT * FRO... navigations" />
+            <marker date="1518908773000" expanded="true" signature="4803:4914" ph="SELECT * FRO... categories" />
+            <marker date="1518908773000" expanded="true" signature="6862:6950" ph="SELECT * FRO... navigations" />
+            <marker date="1518908773000" expanded="true" signature="7437:7548" ph="SELECT * FRO... categories" />
+            <marker date="1518908773000" expanded="true" signature="9569:9665" ph="SELECT * FRO... navigations" />
+            <marker date="1518908773000" expanded="true" signature="10152:10263" ph="SELECT * FRO... categories" />
+            <marker date="1518908773000" expanded="true" signature="15324:15385" ph="SELECT * FRO... links" />
+            <marker date="1518908773000" expanded="true" signature="15715:15776" ph="SELECT * FRO... links" />
+            <marker date="1518908773000" expanded="true" signature="16113:16241" ph="SELECT * FRO... articles" />
+            <marker date="1518908773000" expanded="true" signature="16838:16936" ph="SELECT * FRO... categories" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/humantrafficking/css/siteSpecificStyles.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="737">
           <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
           <folding />
         </state>
@@ -532,9 +524,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/css/heroic-features.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/css/styles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="182" column="29" lean-forward="false" selection-start-line="182" selection-start-column="29" selection-end-line="182" selection-end-column="29" />
+          <folding>
+            <marker date="1518913527000" expanded="true" signature="270:320" ph="SELECT * FRO... themeColors" />
+            <marker date="1518913527000" expanded="true" signature="1197:1242" ph="SELECT * FRO... headerLayout" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/humantrafficking/js/siteSpecificJS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+          <folding>
+            <marker date="1518918055000" expanded="true" signature="411:456" ph="SELECT * FRO... headerLayout" />
+          </folding>
         </state>
       </provider>
     </entry>
