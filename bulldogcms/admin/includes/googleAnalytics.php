@@ -1,11 +1,15 @@
 <?php
-$siteSettingsQuery = "SELECT * FROM siteSettings WHERE siteSettingID = '1'";
-$selectSiteSettings = mysqli_query($connection, $siteSettingsQuery);
-while($row = mysqli_fetch_assoc($selectSiteSettings)) {
-    $googleAnalyticsID = $row['googleAnalyticsID'];
-    $gaClientID = $row['gaClientID'];
-    $gaViewID = $row['gaViewID'];
-}
+// $siteSettingsQuery = "SELECT * FROM siteSettings WHERE siteSettingID = '1'";
+// $selectSiteSettings = mysqli_query($connection, $siteSettingsQuery);
+// while($row = mysqli_fetch_assoc($selectSiteSettings)) {
+//     $googleAnalyticsID = $row['googleAnalyticsID'];
+//     $gaClientID = $row['gaClientID'];
+//     $gaViewID = $row['gaViewID'];
+// }
+
+$googleAnalyticsID = 'UA-113940146-1';
+$gaClientID = '25726136617-v0u1lcokv7br8pkrk3bjl70i3ijnrteo.apps.googleusercontent.com';
+$gaViewID = '169561652';
 
 ?>
 <h1 class="page-header">Google Analytics</h1>
@@ -55,7 +59,8 @@ while($row = mysqli_fetch_assoc($selectSiteSettings)) {
         // Step 3: Authorize the user.
 
         var CLIENT_ID = '<?php echo $gaClientID ?>';
-        //var CLIENT_ID = '418812939384-rnld9pa7s27cfh74npo80lldhknm6s1q.apps.googleusercontent.com';
+        //var CLIENT_ID = '25726136617-v0u1lcokv7br8pkrk3bjl70i3ijnrteo.apps.googleusercontent.com';
+        // var Client_secret = 'AyFTWXNYHRofOPbue4mb6m_o';
 
         gapi.analytics.auth.authorize({
             container: 'auth-button',
