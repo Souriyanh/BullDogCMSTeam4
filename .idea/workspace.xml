@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ad14467d-858e-4651-9bf2-043ade4b6c2a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bulldogcms/frontend/includes/heroic.php" afterPath="$PROJECT_DIR$/bulldogcms/frontend/includes/heroic.php" />
-      <change beforePath="$PROJECT_DIR$/bulldogcms/frontend/index.php" afterPath="$PROJECT_DIR$/bulldogcms/frontend/index.php" />
+      <change beforePath="$PROJECT_DIR$/bulldogcms/admin/includes/adminHomePageSettings.php" afterPath="$PROJECT_DIR$/bulldogcms/admin/includes/adminHomePageSettings.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,23 +26,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="heroic.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/includes/heroic.php">
+      <file leaf-file-name="adminHomePageSettings.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bulldogcms/admin/includes/adminHomePageSettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="17" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="974">
+              <caret line="323" column="0" lean-forward="true" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+              <folding>
+                <marker date="1522613573000" expanded="true" signature="535:587" ph="SELECT * FRO... bodySettings" />
+                <marker date="1522613573000" expanded="true" signature="14572:14683" ph="UPDATE bodySettings... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/index.php">
+      <file leaf-file-name="HumanTrafficking_4-25-2017.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HumanTrafficking_4-25-2017.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2625">
-              <caret line="175" column="22" lean-forward="false" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
+            <state relative-caret-position="465">
+              <caret line="174" column="109" lean-forward="false" selection-start-line="174" selection-start-column="103" selection-end-line="174" selection-end-column="109" />
               <folding>
-                <marker date="1522017768000" expanded="true" signature="100:152" ph="SELECT * FRO... bodySettings" />
+                <marker date="1517187335000" expanded="true" signature="294:358" ph="/*!40101 SET... " />
+                <marker date="1517187335000" expanded="true" signature="360:426" ph="/*!40101 SET... " />
+                <marker date="1517187335000" expanded="true" signature="428:492" ph="/*!40101 SET... " />
+                <marker date="1517187335000" expanded="true" signature="494:520" ph="/*!40101 SET... " />
+                <marker date="1517187335000" expanded="true" signature="665:1221" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="1269:2587" ph="INSERT INTO `articles`... " />
+                <marker date="1517187335000" expanded="true" signature="2709:3543" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="3602:51661" ph="INSERT INTO `articleTransactions`... " />
+                <marker date="1517187335000" expanded="true" signature="51663:59081" ph="INSERT INTO `articleTransactions`... " />
+                <marker date="1517187335000" expanded="true" signature="59196:59522" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="59574:59742" ph="INSERT INTO `asideSection`... " />
+                <marker date="1517187335000" expanded="true" signature="59857:60645" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="60697:60999" ph="INSERT INTO `bodySettings`... " />
+                <marker date="1517187335000" expanded="true" signature="61112:61703" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="61753:67323" ph="INSERT INTO `categories`... " />
+                <marker date="1517187335000" expanded="true" signature="67438:67718" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="67770:67898" ph="INSERT INTO `categoryType`... " />
+                <marker date="1517187335000" expanded="true" signature="68010:68441" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="68490:105410" ph="INSERT INTO `changeLog`... " />
+                <marker date="1517187335000" expanded="true" signature="105525:106058" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="106110:106399" ph="INSERT INTO `footerLayout`... " />
+                <marker date="1517187335000" expanded="true" signature="106514:107074" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="107126:107339" ph="INSERT INTO `headerLayout`... " />
+                <marker date="1517187335000" expanded="true" signature="107451:107780" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="107829:144811" ph="INSERT INTO `helpPages`... " />
+                <marker date="1517187335000" expanded="true" signature="144919:145306" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="145351:146210" ph="INSERT INTO `links`... " />
+                <marker date="1517187335000" expanded="true" signature="146321:146585" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="146633:146718" ph="INSERT INTO `linkType`... " />
+                <marker date="1517187335000" expanded="true" signature="146832:147509" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="147560:148359" ph="INSERT INTO `navigations`... " />
+                <marker date="1517187335000" expanded="true" signature="148467:148716" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="148761:148843" ph="INSERT INTO `roles`... " />
+                <marker date="1517187335000" expanded="true" signature="148958:150041" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="150093:150584" ph="INSERT INTO `siteSettings`... " />
+                <marker date="1517187335000" expanded="true" signature="150698:152150" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="152201:152720" ph="INSERT INTO `themeColors`... " />
+                <marker date="1517187335000" expanded="true" signature="152828:153509" ph="CREATE TABLE... IF" />
+                <marker date="1517187335000" expanded="true" signature="153554:155918" ph="INSERT INTO `users`... " />
+                <marker date="1517187335000" expanded="true" signature="155921:155983" ph="/*!40101 SET... " />
+                <marker date="1517187335000" expanded="true" signature="155985:156049" ph="/*!40101 SET... " />
+                <marker date="1517187335000" expanded="true" signature="156051:156113" ph="/*!40101 SET... " />
+                <marker date="1517187335000" expanded="true" signature="156320:156410" ph="UPDATE navigations... " />
+                <marker date="1517187335000" expanded="true" signature="156460:156698" ph="INSERT INTO `navigations`... " />
+                <marker date="1517187335000" expanded="true" signature="156745:156817" ph="UPDATE categories... " />
               </folding>
             </state>
           </provider>
@@ -58,7 +104,7 @@
       <find>well</find>
       <find>thum</find>
       <find>hero</find>
-      <find>hero</find>
+      <find>heroic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,6 +121,7 @@
         <option value="$PROJECT_DIR$/bulldogcms/frontend/includes/categoryList.php" />
         <option value="$PROJECT_DIR$/bulldogcms/frontend/index.php" />
         <option value="$PROJECT_DIR$/bulldogcms/frontend/includes/heroic.php" />
+        <option value="$PROJECT_DIR$/bulldogcms/admin/includes/adminHomePageSettings.php" />
       </list>
     </option>
   </component>
@@ -105,8 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,29 +167,23 @@
             <path>
               <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
               <item name="BullDogCMSTeam4" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bulldogcms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BullDogCMSTeam4" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bulldogcms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BullDogCMSTeam4" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="humantrafficking" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="BullDogCMSTeam4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,7 +221,8 @@
       <workItem from="1518890735698" duration="5695000" />
       <workItem from="1519009976088" duration="343000" />
       <workItem from="1520963219238" duration="11187000" />
-      <workItem from="1521939877563" duration="3210000" />
+      <workItem from="1521939877563" duration="6217000" />
+      <workItem from="1522604826866" duration="2236000" />
     </task>
     <task id="LOCAL-00001" summary="This is a change to the quick exit GUI">
       <created>1517187453347</created>
@@ -254,11 +294,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521232493698</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Bootstrap Caro Implementation (1)">
+      <created>1522017852642</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1522017852642</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24192000" />
+    <option name="totallyTimeSpent" value="29435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="0" />
@@ -301,28 +348,14 @@
     <MESSAGE value="change to the hero h1 css" />
     <MESSAGE value="This is a change that deals with the quick exit functionality of the site. Users are now able to hit the &quot;esc&quot; key to activate the quick exit button.&#10;&#10;-Steven" />
     <MESSAGE value="well shadow changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="well shadow changes" />
+    <MESSAGE value="Bootstrap Caro Implementation (1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bootstrap Caro Implementation (1)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/humantrafficking/uploads/images/william-stitt-162611.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/humantrafficking/uploads/images/TraffickCam.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/humantrafficking/uploads/images/Teachers.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/humantrafficking/uploads/images/Sweatshop_1.preview.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -372,13 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bulldogcms/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-931">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bulldogcms/admin/css/adminStyles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1">
@@ -397,13 +423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bdcmsSQLbase.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6340">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -547,47 +566,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HumanTrafficking_4-25-2017.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/includes/heroicCaro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/css/styles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="166" column="6" lean-forward="false" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="6" />
-          <folding>
-            <marker date="1521232455000" expanded="true" signature="265:315" ph="SELECT * FRO... themeColors" />
-            <marker date="1521232455000" expanded="true" signature="1190:1235" ph="SELECT * FRO... headerLayout" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/css/heroic-features.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/includes/heroicCaro.php" />
     <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/includes/frontBody.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517187335000" expanded="true" signature="156:218" ph="SELECT bodyC... bodySettings" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="793">
           <caret line="85" column="32" lean-forward="false" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,9 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517187335000" expanded="true" signature="27:74" ph="SELECT * FRO... footerLayout" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -636,7 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,9 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517187335000" expanded="true" signature="279:331" ph="SELECT * FRO... siteSettings" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -654,11 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-          <folding>
-            <marker date="1517187335000" expanded="true" signature="27:74" ph="SELECT * FRO... headerLayout" />
-            <marker date="1517187335000" expanded="true" signature="947:969" ph="..." />
-            <marker date="1517187335000" expanded="true" signature="1871:1877" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,19 +636,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517187335000" expanded="true" signature="488:637" ph="SELECT * FRO... articles" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/index.php">
+    <entry file="file://$PROJECT_DIR$/bulldogcms/admin/includes/adminHeaderSettings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="175" column="22" lean-forward="false" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
-          <folding>
-            <marker date="1522017768000" expanded="true" signature="100:152" ph="SELECT * FRO... bodySettings" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bulldogcms/admin/includes/adminHeader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -686,7 +657,110 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
           <caret line="61" column="17" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bulldogcms/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-568">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/css/styles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="166" column="5" lean-forward="false" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/css/heroic-features.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdcmsSQLbase.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="262" column="859" lean-forward="false" selection-start-line="262" selection-start-column="858" selection-end-line="262" selection-end-column="859" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HumanTrafficking_4-25-2017.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="174" column="109" lean-forward="false" selection-start-line="174" selection-start-column="103" selection-end-line="174" selection-end-column="109" />
+          <folding>
+            <marker date="1517187335000" expanded="true" signature="294:358" ph="/*!40101 SET... " />
+            <marker date="1517187335000" expanded="true" signature="360:426" ph="/*!40101 SET... " />
+            <marker date="1517187335000" expanded="true" signature="428:492" ph="/*!40101 SET... " />
+            <marker date="1517187335000" expanded="true" signature="494:520" ph="/*!40101 SET... " />
+            <marker date="1517187335000" expanded="true" signature="665:1221" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="1269:2587" ph="INSERT INTO `articles`... " />
+            <marker date="1517187335000" expanded="true" signature="2709:3543" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="3602:51661" ph="INSERT INTO `articleTransactions`... " />
+            <marker date="1517187335000" expanded="true" signature="51663:59081" ph="INSERT INTO `articleTransactions`... " />
+            <marker date="1517187335000" expanded="true" signature="59196:59522" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="59574:59742" ph="INSERT INTO `asideSection`... " />
+            <marker date="1517187335000" expanded="true" signature="59857:60645" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="60697:60999" ph="INSERT INTO `bodySettings`... " />
+            <marker date="1517187335000" expanded="true" signature="61112:61703" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="61753:67323" ph="INSERT INTO `categories`... " />
+            <marker date="1517187335000" expanded="true" signature="67438:67718" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="67770:67898" ph="INSERT INTO `categoryType`... " />
+            <marker date="1517187335000" expanded="true" signature="68010:68441" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="68490:105410" ph="INSERT INTO `changeLog`... " />
+            <marker date="1517187335000" expanded="true" signature="105525:106058" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="106110:106399" ph="INSERT INTO `footerLayout`... " />
+            <marker date="1517187335000" expanded="true" signature="106514:107074" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="107126:107339" ph="INSERT INTO `headerLayout`... " />
+            <marker date="1517187335000" expanded="true" signature="107451:107780" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="107829:144811" ph="INSERT INTO `helpPages`... " />
+            <marker date="1517187335000" expanded="true" signature="144919:145306" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="145351:146210" ph="INSERT INTO `links`... " />
+            <marker date="1517187335000" expanded="true" signature="146321:146585" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="146633:146718" ph="INSERT INTO `linkType`... " />
+            <marker date="1517187335000" expanded="true" signature="146832:147509" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="147560:148359" ph="INSERT INTO `navigations`... " />
+            <marker date="1517187335000" expanded="true" signature="148467:148716" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="148761:148843" ph="INSERT INTO `roles`... " />
+            <marker date="1517187335000" expanded="true" signature="148958:150041" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="150093:150584" ph="INSERT INTO `siteSettings`... " />
+            <marker date="1517187335000" expanded="true" signature="150698:152150" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="152201:152720" ph="INSERT INTO `themeColors`... " />
+            <marker date="1517187335000" expanded="true" signature="152828:153509" ph="CREATE TABLE... IF" />
+            <marker date="1517187335000" expanded="true" signature="153554:155918" ph="INSERT INTO `users`... " />
+            <marker date="1517187335000" expanded="true" signature="155921:155983" ph="/*!40101 SET... " />
+            <marker date="1517187335000" expanded="true" signature="155985:156049" ph="/*!40101 SET... " />
+            <marker date="1517187335000" expanded="true" signature="156051:156113" ph="/*!40101 SET... " />
+            <marker date="1517187335000" expanded="true" signature="156320:156410" ph="UPDATE navigations... " />
+            <marker date="1517187335000" expanded="true" signature="156460:156698" ph="INSERT INTO `navigations`... " />
+            <marker date="1517187335000" expanded="true" signature="156745:156817" ph="UPDATE categories... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1522017768000" expanded="true" signature="100:152" ph="SELECT * FRO... bodySettings" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bulldogcms/admin/includes/adminHomePageSettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="974">
+          <caret line="323" column="0" lean-forward="true" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+          <folding>
+            <marker date="1522613573000" expanded="true" signature="535:587" ph="SELECT * FRO... bodySettings" />
+            <marker date="1522613573000" expanded="true" signature="14572:14683" ph="UPDATE bodySettings... " />
+          </folding>
         </state>
       </provider>
     </entry>
