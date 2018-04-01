@@ -32,7 +32,10 @@
                 <?php
                 if (isset($footerTextArea1) && $footerTextArea1 != '')
                     echo "{$footerTextArea1}";
+
                 ?>
+                <!-- Google Translate -->
+                <div id="google_translate_element"></div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 footSection vertNav">
                 <div class="navbar-inverse navbar-footer">
