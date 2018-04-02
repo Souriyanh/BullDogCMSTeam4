@@ -118,8 +118,8 @@
                     ?>
                     <!--Using Responsive Filemanager: http://www.responsivefilemanager.com/  -->
                     <p>Upload New Image:</p>
-                    <input class="form-control" id="heroicDBImage" type="text" name="heroicDBImage">
-                    <a href="filemanager/dialog.php?type=1&field_id=heroicDBImage&relative_url=1&fldr=images" class="btn btn-filemanager btn iframe-btn" type="button" data-toggle="tooltip" title="Choose image">Choose image</a>
+                    <input class="form-control" id="heroicDBImage1" type="text" name="heroicDBImage1">
+                    <a href="filemanager/dialog.php?type=1&field_id=heroicDBImage1&relative_url=1&fldr=images" class="btn btn-filemanager btn iframe-btn" type="button" data-toggle="tooltip" title="Choose image">Choose image</a>
                     <!--<input class="filestyle" type="file" name="heroicDBImage" id="heroicDBImage" accept="image/*">-->
                     <div>
                         <input type="checkbox" name="imageRemove" value="remove"> Remove Image?<br>
@@ -159,8 +159,8 @@
                     ?>
                     <!--Using Responsive Filemanager: http://www.responsivefilemanager.com/  -->
                     <p>Upload New Image:</p>
-                    <input class="form-control" id="heroicDBImage" type="text" name="heroicDBImage">
-                    <a href="filemanager/dialog.php?type=1&field_id=heroicDBImage&relative_url=1&fldr=images" class="btn btn-filemanager btn iframe-btn" type="button" data-toggle="tooltip" title="Choose image">Choose image</a>
+                    <input class="form-control" id="heroicDBImage2" type="text" name="heroicDBImage2">
+                    <a href="filemanager/dialog.php?type=1&field_id=heroicDBImage2&relative_url=1&fldr=images" class="btn btn-filemanager btn iframe-btn" type="button" data-toggle="tooltip" title="Choose image">Choose image</a>
                     <!--<input class="filestyle" type="file" name="heroicDBImage" id="heroicDBImage" accept="image/*">-->
                     <div>
                         <input type="checkbox" name="imageRemove" value="remove"> Remove Image?<br>
@@ -271,7 +271,12 @@
                 //$heroicImage = $_POST['heroicImage'];
                 $bodyView = $_POST['bodyView'];
                 $heroicHeader = mysqli_real_escape_string($connection, html_entity_decode($_POST['heroicHeader'], ENT_QUOTES, 'UTF-8'));//un-escaped html wise and then escaped sql wise for query
+                $heroicHeader1 = mysqli_real_escape_string($connection, html_entity_decode($_POST['heroicHeader1'], ENT_QUOTES, 'UTF-8'));//un-escaped html wise and then escaped sql wise for query
+                $heroicHeader2 = mysqli_real_escape_string($connection, html_entity_decode($_POST['heroicHeader2'], ENT_QUOTES, 'UTF-8'));//un-escaped html wise and then escaped sql wise for query
+
                 $heroicText1 = mysqli_real_escape_string($connection, html_entity_decode($_POST['heroicText1'], ENT_QUOTES, 'UTF-8'));//un-escaped html wise and then escaped sql wise for query
+                $heroicText2 = mysqli_real_escape_string($connection, html_entity_decode($_POST['heroicText2'], ENT_QUOTES, 'UTF-8'));//un-escaped html wise and then escaped sql wise for query
+                $heroicText3 = mysqli_real_escape_string($connection, html_entity_decode($_POST['heroicText3'], ENT_QUOTES, 'UTF-8'));//un-escaped html wise and then escaped sql wise for query
                 $bodyContent = mysqli_real_escape_string($connection, $_POST['bodyContent']);
                 $fpEnableCategories = $_POST['fpEnableCategories'];
                 $fpEnableArticles = $_POST['fpEnableArticles'];
@@ -282,16 +287,33 @@
                 //$heroicDBImage = $_FILES['heroicDBImage']['name'];//File in database..
                 //$heroicImageUpload = $_FILES['heroicDBImage']['tmp_name']; //for uploading to image directory
 
+                $heroicDBImage1 = $_POST['heroicDBImage1'];//File in database..
+                //$heroicDBImage1 = $_FILES['heroicDBImage1']['name'];//File in database..
+                //$heroicImage1Upload = $_FILES['heroicDBImage1']['tmp_name']; //for uploading to image directory
+
+                $heroicDBImage2 = $_POST['heroicDBImage2'];//File in database..
+                //$heroicDBImage2 = $_FILES['heroicDBImage2']['name'];//File in database..
+                //$heroicImageUpload2 = $_FILES['heroicDBImage2']['tmp_name']; //for uploading to image directory
+
                 if (!empty($heroicDBImage)) {
                     $heroicImage = $heroicDBImage;
                 }
 
+                if (!empty($heroicDBImage1)) {
+                    $heroicImage1 = $heroicDBImage1;
+                }
+
+                if (!empty($heroicDBImage2)) {
+                    $heroicImage2 = $heroicDBImage2;
+                }
                 //Upload image to images folder
                 //move_uploaded_file($heroicImageUpload, "../images/$heroicImage"); //Possibly add image renaming.
 
                 //Need to check if any fields blank and post error before actually doing Update
-                $query = "UPDATE bodySettings SET bodyHeroic = '{$bodyHeroic}', heroicImage = '{$heroicImage}', bodyView = '{$bodyView}', ";
-                $query .= "heroicHeader = '{$heroicHeader}', heroicText1 = '{$heroicText1}', bodyText = '{$bodyText}', bodyContent = '{$bodyContent}', ";
+                $query = "UPDATE bodySettings SET bodyHeroic = '{$bodyHeroic}', heroicImage = '{$heroicImage}', heroicImage1 = '{$heroicImage1}', heroicImage2 = '{$heroicImage2}', bodyView = '{$bodyView}', ";
+
+                $query .= "heroicHeader = '{$heroicHeader}', heroicHeader1 = '{$heroicHeader1}', heroicHeader2 = '{$heroicHeader2}',  heroicText1 = '{$heroicText1}', heroicText2 = '{$heroicText2}', heroicText3 = '{$heroicText3}', bodyText = '{$bodyText}', bodyContent = '{$bodyContent}', ";
+
                 $query .= "fpPagLength = '{$fpPagLength}', fpEnableCategories = '{$fpEnableCategories}', fpEnableArticles = '{$fpEnableArticles}', fpOrder = '{$fpOrder}' WHERE bodySettingID = '1'";
                 $query = mysqli_real_escape_string($connection, $query);
                 $updateQuery = mysqli_query($connection, $query);
