@@ -226,7 +226,7 @@
             //This will be the prepared statment for the update query for site settings.
                 $siteSettingsPrepStmt = mysqli_stmt_init($connection);
 
-                //This is the creation, execution, and closing of the prepared statment sql query.
+                //This is the creation, execution, and closing of the prepared statement sql query.
                 IF (mysqli_stmt_prepare($siteSettingsPrepStmt,
                     "UPDATE siteSettings SET siteName =?, siteEmail =?, siteSearch = '{$siteSearch}',
                       articleSubmission = '{$articleSubmission}', enableLinks = '{$enableLinks}', enableLatestArticles = '{$enableLatestArticles}', enableEvents = '{$enableEvents}', enableNews = '{$enableNews}', enableSideWidget = '{$enableSideWidget}'

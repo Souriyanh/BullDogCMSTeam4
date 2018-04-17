@@ -315,7 +315,6 @@
                 $query .= "heroicHeader = '{$heroicHeader}', heroicHeader1 = '{$heroicHeader1}', heroicHeader2 = '{$heroicHeader2}',  heroicText1 = '{$heroicText1}', heroicText2 = '{$heroicText2}', heroicText3 = '{$heroicText3}', bodyText = '{$bodyText}', bodyContent = '{$bodyContent}', ";
 
                 $query .= "fpPagLength = '{$fpPagLength}', fpEnableCategories = '{$fpEnableCategories}', fpEnableArticles = '{$fpEnableArticles}', fpOrder = '{$fpOrder}' WHERE bodySettingID = '1'";
-                $query = mysqli_real_escape_string($connection, $query);
                 $updateQuery = mysqli_query($connection, $query);
 
                 confirmQuery($updateQuery);
