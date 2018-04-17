@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad14467d-858e-4651-9bf2-043ade4b6c2a" name="Default" comment="">
+    <list default="true" id="ad14467d-858e-4651-9bf2-043ade4b6c2a" name="Default" comment="This is going to fix the CMS update settings button fail. (SQL error when trying to update)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bulldogcms/admin/includes/adminHomePageSettings.php" afterPath="$PROJECT_DIR$/bulldogcms/admin/includes/adminHomePageSettings.php" />
-      <change beforePath="$PROJECT_DIR$/bulldogcms/admin/includes/adminSiteSettings.php" afterPath="$PROJECT_DIR$/bulldogcms/admin/includes/adminSiteSettings.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="aside.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/includes/aside.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1128">
-              <caret line="80" column="2" lean-forward="false" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="74" />
+            <state relative-caret-position="361">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <marker date="1517187335000" expanded="true" signature="1140:1193" ph="SELECT * FRO... asideSection" />
               </folding>
@@ -42,7 +40,7 @@
       <file leaf-file-name="adminHomePageSettings.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bulldogcms/admin/includes/adminHomePageSettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="328">
               <caret line="316" column="197" lean-forward="false" selection-start-line="316" selection-start-column="197" selection-end-line="316" selection-end-column="197" />
               <folding>
                 <marker date="1523936377000" expanded="true" signature="535:587" ph="SELECT * FRO... bodySettings" />
@@ -214,7 +212,7 @@
       <workItem from="1522824544686" duration="439000" />
       <workItem from="1523405663697" duration="2763000" />
       <workItem from="1523744364420" duration="6947000" />
-      <workItem from="1523930548603" duration="526000" />
+      <workItem from="1523930548603" duration="887000" />
     </task>
     <task id="LOCAL-00001" summary="This is a change to the quick exit GUI">
       <created>1517187453347</created>
@@ -307,11 +305,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522693919328</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="This is going to fix the CMS update settings button fail. (SQL error when trying to update)">
+      <created>1523936444294</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1523936444294</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47850000" />
+    <option name="totallyTimeSpent" value="48211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -357,7 +362,8 @@
     <MESSAGE value="Bootstrap Caro Implementation (1)" />
     <MESSAGE value="homepage settings update" />
     <MESSAGE value="admin homepage settings update" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin homepage settings update" />
+    <MESSAGE value="This is going to fix the CMS update settings button fail. (SQL error when trying to update)" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is going to fix the CMS update settings button fail. (SQL error when trying to update)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -609,6 +615,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-90">
           <caret line="228" column="84" lean-forward="false" selection-start-line="228" selection-start-column="84" selection-end-line="228" selection-end-column="84" />
+          <folding>
+            <marker date="1523745304000" expanded="true" signature="522:574" ph="SELECT * FRO... siteSettings" />
+            <marker date="1523745304000" expanded="true" signature="11639:12197" ph="UPDATE siteSettings... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -731,8 +741,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bulldogcms/frontend/includes/aside.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="80" column="2" lean-forward="false" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="74" />
+        <state relative-caret-position="361">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <marker date="1517187335000" expanded="true" signature="1140:1193" ph="SELECT * FRO... asideSection" />
           </folding>
@@ -741,7 +751,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bulldogcms/admin/includes/adminHomePageSettings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="328">
           <caret line="316" column="197" lean-forward="false" selection-start-line="316" selection-start-column="197" selection-end-line="316" selection-end-column="197" />
           <folding>
             <marker date="1523936377000" expanded="true" signature="535:587" ph="SELECT * FRO... bodySettings" />
